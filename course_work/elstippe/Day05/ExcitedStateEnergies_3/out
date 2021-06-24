@@ -1,0 +1,344 @@
+ 
+ |^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^|
+ | MD execution started at    Fri Jun 18 16:25:07 EDT 2021   |
+ | Computer:  Linux srv-p22-12.cbls.ccr.buffalo.e |
+ |________________________________________________|
+ 
+ rnd_seed=       19345
+ !!!!!!-----MD INPUT-----!!!!!!
+ 
+ Excited state MD,      state=           3
+ Number of states to propagate           5
+ Initial count for out files              0
+ MD using Langevin 
+ Starting time, fs          0.000000000000000E+000
+ Time step, fs                        0.100000000000000     
+ Number of classical steps (CS)            0
+ Quantum steps/per CS                    4
+ Displacement for deriv. [A]     1.000000000000000E-003
+ Langevin thermostat dynamics, therm_type=           1
+ Temperature, K                  300.000000000000     
+ Bath relaxation constant       0.400000000000000     
+ Equilibrated dynamics
+ Number of steps per degree K           100
+ Number of steps to write data            1
+ Number of steps to write coords          10
+ Friction coefficient [1/ps]      20.0000000000000     
+ Seed for random generator           19345
+ NAESMD verbosity,            2
+ MD will use analytic deriv,  ideriv=           1
+ Cartesian coordinates are used
+ Allocating initial naesmd_module variables
+ Allocating md_module initial variables
+ Allocating variables
+ Allocating naesmd_module variables          12           5
+ Allocating md_module variables          12
+  Finish reading coordinates 
+ Rescaling velocity
+ 
+ Initial Geometry
+    6        -7.979827    0.677692   -0.053229
+    6        -7.084993    1.760260    0.029496
+    6        -5.705842    1.549036    0.031276
+    6        -5.223142    0.219533   -0.044604
+    6        -6.105096   -0.868556    0.022087
+    6        -7.534410   -0.644449    0.024813
+    1        -9.026808    0.858772   -0.079479
+    1        -7.477461    2.756635    0.163539
+    1        -5.093934    2.447989    0.148188
+    1        -4.129202    0.099937   -0.158081
+    1        -5.691699   -1.887856    0.115109
+    1        -8.283839   -1.431380    0.105193
+
+--------------------------------------------------------------------------------
+  QM CALCULATION INFO
+--------------------------------------------------------------------------------
+
+| QMMM: Citation for AMBER QMMM Run:
+| QMMM: R.C. Walker, M.F. Crowley and D.A. Case, J. COMP. CHEM. 29:1019, 2008
+
+QMMM: SINGLET STATE CALCULATION
+QMMM: RHF CALCULATION, NO. OF DOUBLY OCCUPIED LEVELS = 15
+
+| QMMM: *** Selected Hamiltonian *** 
+| QMMM: AM1         
+
+| QMMM: *** Parameter sets in use ***
+| QMMM: C : M.J.S.DEWAR et al. JACS, 107, 3902, (1985)
+| QMMM: H : M.J.S.DEWAR et al. JACS, 107, 3902, (1985)
+
+| QMMM: *** SCF convergence criteria ***
+| QMMM: Energy change                :  0.2D-06 kcal/mol
+| QMMM: Error matrix |FP-PF|         :  0.1D+00 au
+| QMMM: Density matrix change        :  0.2D-04
+| QMMM: Maximum number of SCF cycles :      300
+ 
+| QMMM: *** Diagonalization Routine Information ***
+| QMMM: Pseudo diagonalizations are allowed.
+| QMMM: Auto diagonalization routine selection is disabled.
+| QMMM: Using internal diagonalization routine (diag_routine=1).
+
+  QMMM: QM Region Cartesian Coordinates (*=link atom) 
+  QMMM: QM_NO.   MM_NO.  ATOM         X         Y         Z
+  QMMM:     1        1      C       -7.9798    0.6777   -0.0532
+  QMMM:     2        2      C       -7.0850    1.7603    0.0295
+  QMMM:     3        3      C       -5.7058    1.5490    0.0313
+  QMMM:     4        4      C       -5.2231    0.2195   -0.0446
+  QMMM:     5        5      C       -6.1051   -0.8686    0.0221
+  QMMM:     6        6      C       -7.5344   -0.6444    0.0248
+  QMMM:     7        7      H       -9.0268    0.8588   -0.0795
+  QMMM:     8        8      H       -7.4775    2.7566    0.1635
+  QMMM:     9        9      H       -5.0939    2.4480    0.1482
+  QMMM:    10       10      H       -4.1292    0.0999   -0.1581
+  QMMM:    11       11      H       -5.6917   -1.8879    0.1151
+  QMMM:    12       12      H       -8.2838   -1.4314    0.1052
+
+--------------------------------------------------------------------------------
+  RESULTS
+--------------------------------------------------------------------------------
+
+QMMM: SCF Converged to 0.2306E-06 in:    16 Cycles 
+ info00           0
+ info000           0
+ info Nrpa,nd,nd1         450          30           8
+ info shapes          30          30          30         450
+ info0           0
+ info00           0
+ info000           0
+ info Nrpa,nd,nd1         450          30          14
+ info shapes          30          30          30         450
+ info0           0
+ info00           0
+ info000           0
+ info Nrpa,nd,nd1         450          30          20
+ info shapes          30          30          30         450
+ info0           0
+ info00           0
+ info000           0
+ info Nrpa,nd,nd1         450          30          26
+ info shapes          30          30          30         450
+ info0           0
+ info00           0
+ info000           0
+ info Nrpa,nd,nd1         450          30          30
+ info shapes          30          30          30         450
+ info0           0
+ Davidson not converged, expansion=          30
+ info00           0
+ info000           0
+ info Nrpa,nd,nd1         450          30           6
+ info shapes          30          30          30         450
+ info0           0
+ info00           0
+ info000           0
+ info Nrpa,nd,nd1         450          30          12
+ info shapes          30          30          30         450
+ info0           0
+ info00           0
+ info000           0
+ info Nrpa,nd,nd1         450          30          18
+ info shapes          30          30          30         450
+ info0           0
+ info00           0
+ info000           0
+ info Nrpa,nd,nd1         450          30          23
+ info shapes          30          30          30         450
+ info0           0
+ info00           0
+ info000           0
+ info Nrpa,nd,nd1         450          30          27
+ info shapes          30          30          30         450
+ info0           0
+ info00           0
+ info000           0
+ info Nrpa,nd,nd1         450          30          30
+ info shapes          30          30          30         450
+ info0           0
+ Davidson not converged, expansion=          30
+ info00           0
+ info000           0
+ info Nrpa,nd,nd1         450          30           6
+ info shapes          30          30          30         450
+ info0           0
+ info00           0
+ info000           0
+ info Nrpa,nd,nd1         450          30          10
+ info shapes          30          30          30         450
+ info0           0
+ info00           0
+ info000           0
+ info Nrpa,nd,nd1         450          30          14
+ info shapes          30          30          30         450
+ info0           0
+ info00           0
+ info000           0
+ info Nrpa,nd,nd1         450          30          18
+ info shapes          30          30          30         450
+ info0           0
+ info00           0
+ info000           0
+ info Nrpa,nd,nd1         450          30          22
+ info shapes          30          30          30         450
+ info0           0
+ info00           0
+ info000           0
+ info Nrpa,nd,nd1         450          30          26
+ info shapes          30          30          30         450
+ info0           0
+ info00           0
+ info000           0
+ info Nrpa,nd,nd1         450          30          30
+ info shapes          30          30          30         450
+ info0           0
+ Davidson not converged, expansion=          30
+ info00           0
+ info000           0
+ info Nrpa,nd,nd1         450          30           6
+ info shapes          30          30          30         450
+ info0           0
+ info00           0
+ info000           0
+ info Nrpa,nd,nd1         450          30          10
+ info shapes          30          30          30         450
+ info0           0
+ info00           0
+ info000           0
+ info Nrpa,nd,nd1         450          30          13
+ info shapes          30          30          30         450
+ info0           0
+ info00           0
+ info000           0
+ info Nrpa,nd,nd1         450          30          15
+ info shapes          30          30          30         450
+ info0           0
+ info00           0
+ info000           0
+ info Nrpa,nd,nd1         450          30          17
+ info shapes          30          30          30         450
+ info0           0
+ info00           0
+ info000           0
+ info Nrpa,nd,nd1         450          30          19
+ info shapes          30          30          30         450
+ info0           0
+ info00           0
+ info000           0
+ info Nrpa,nd,nd1         450          30          20
+ info shapes          30          30          30         450
+ info0           0
+ info00           0
+ info000           0
+ info Nrpa,nd,nd1         450          30          21
+ info shapes          30          30          30         450
+ info0           0
+ info00           0
+ info000           0
+ info Nrpa,nd,nd1         450          30          22
+ info shapes          30          30          30         450
+ info0           0
+ info00           0
+ info000           0
+ info Nrpa,nd,nd1         450          30          23
+ info shapes          30          30          30         450
+ info0           0
+ info00           0
+ info000           0
+ info Nrpa,nd,nd1         450          30          24
+ info shapes          30          30          30         450
+ info0           0
+ @@@@ Davidson subroutine Found vectors           6
+  i, e0(i), ferr(i), ftol0
+  1 +++    3.882711844195426     0.27E-07 0.10E-06
+  2 +++    4.105033134249618     0.16E-07 0.10E-06
+  3 +++    5.732701858954122     0.20E-07 0.10E-06
+  4 +++    5.761422394073966     0.22E-07 0.10E-06
+  5 +++    5.856041291671442     0.42E-07 0.10E-06
+  6 +++    5.965778354827856     0.70E-07 0.10E-06
+ -------------------------------------------------
+ 
+ Frequencies (eV) and Oscillator strengths (unitless)
+        Omega            fx              fy              fz          ftotal
+   1     3.88271184419543        0.417813447084244E-04    0.104634117935087E-04    0.131809882034016E-06    0.523765663839671E-04
+   2     4.10503313424962        0.833795273675566E-03    0.166700193826998E-07    0.470224274753421E-04    0.880834371170291E-03
+   3     5.73270185895412        0.406736889773760        0.902435872394370E-01    0.146883777486890E-03    0.497127360790684    
+   4     5.76142239407397        0.934230827786084E-01    0.386536928534153        0.138021836069392E-05    0.479961391531122    
+   5     5.85604129167144        0.215466042219790E-02    0.672955992388908E-01    0.198682018403748E-05    0.694522464812728E-01
+   6     5.96577835482786        0.136291584361543E-01    0.717710946521815E-04    0.455503937514494E-03    0.141564334683210E-01
+ 
+ Frequencies (eV) and Transition Dipole Moments (AU)
+        Omega            fx              fy              fz          ftotal
+   1     3.88271184419543        0.209577506448006E-01    0.104879382311484E-01   -0.117713818461886E-02    0.550609814735711E-03
+   2     4.10503313424962        0.910526150718715E-01   -0.407127802725884E-03   -0.216229643144096E-01    0.875829705021639E-02
+   3     5.73270185895412         1.70175935254471       -0.801584922402495        0.323391261822081E-01     3.53956910087863    
+   4     5.76142239407397       -0.813548186369801        -1.65482350101662        0.312701586339537E-02     3.40031124929070    
+   5     5.85604129167144       -0.122548611348705       -0.684876570887594       -0.372133064104846E-02    0.484087927795985    
+   6     5.96577835482786        0.305366931751200       -0.221596180466740E-01   -0.558256197496339E-01    0.968565114995473E-01
+ 
+ Total energy of the ground state (eV,AU)
+           0  -850.073007945558       -31.2395954142757     
+ Total energies of excited states (eV,AU)
+           1  -846.190296101363       -31.0969084379935     
+           2  -845.967974811309       -31.0887382842674     
+           3  -844.340306086604       -31.0289225837888     
+           4  -844.311585551484       -31.0278671239767     
+           5  -844.216966653887       -31.0243899448969     
+           6  -844.107229590731       -31.0203571836836     
+ Ground State Molecular Dipole Moment (A.U.)
+                         dx              dy              dz          ftotal
+                     0.7568637E-02 -0.5821374E-02  0.7961705E-01  0.8018757E-01
+ 
+ Frequencies (eV) Unrelaxed Difference Dipole Moments (AU)
+        Omega            dx              dy              dz          ftotal
+   1   3.882712      0.1428818E-01 -0.6327141E-02  0.1018942E-01  0.1865500E-01
+   2   4.105033      0.1211835E-02  0.3145832E-02  0.1132487E-01  0.1181599E-01
+   3   5.732702      0.2349870E-01  0.4796556E-01  0.6796729E-01  0.8644325E-01
+   4   5.761422      0.1169706      0.2461341E-01  0.1980871E-02  0.1195486    
+   5   5.856041     -0.5352624E-01 -0.9120259E-02 -0.1515380E-01  0.5637265E-01
+   6   5.965778     -0.1518131E-01  0.5546314E-01  0.6231304E-01  0.8479119E-01
+ 
+ Frequencies (eV) Relaxed Difference Dipole Moments (AU)
+        Omega            dx              dy              dz          ftotal
+   1   3.882712      0.7302964E-02 -0.2326139E-02  0.8906954E-02  0.1175066E-01
+   2   4.105033      0.1530492E-02  0.8938698E-03  0.9803770E-02  0.9962696E-02
+   3   5.732702      0.1504307E-01  0.1957660E-01  0.5738957E-01  0.6247479E-01
+   4   5.761422      0.6279602E-01  0.7477161E-02  0.6118193E-02  0.6353487E-01
+   5   5.856041     -0.2207166E-01 -0.9752101E-03 -0.8212528E-02  0.2357021E-01
+   6   5.965778      0.5777076E-03  0.2368386E-01  0.5344806E-01  0.5846327E-01
+ 
+ Frequencies (eV) and Total Molecular Dipole Moments (Debye)
+        Omega            dx              dy              dz          ftotal
+   1   3.882712      0.3779983E-01 -0.2070891E-01  0.2250055      0.2290964    
+   2   4.105033      0.2312768E-01 -0.1252446E-01  0.2272850      0.2288017    
+   3   5.732702      0.5747321E-01  0.3496229E-01  0.3482360      0.3546743    
+   4   5.761422      0.1788491      0.4208589E-02  0.2179172      0.2819443    
+   5   5.856041     -0.3686300E-01 -0.1727519E-01  0.1814921      0.1860019    
+   6   5.965778      0.2070594E-01  0.4540191E-01  0.3382177      0.3418790    
+ 
+ Frequencies (eV) and Total Molecular Dipole Moments (AU)
+        Omega            dx              dy              dz          ftotal
+   1   3.882712      0.1487160E-01 -0.8147513E-02  0.8852400E-01  0.9013349E-01
+   2   4.105033      0.9099130E-02 -0.4927504E-02  0.8942082E-01  0.9001754E-01
+   3   5.732702      0.2261170E-01  0.1375523E-01  0.1370066      0.1395396    
+   4   5.761422      0.7036466E-01  0.1655787E-02  0.8573524E-01  0.1109255    
+   5   5.856041     -0.1450302E-01 -0.6796584E-02  0.7140452E-01  0.7317880E-01
+   6   5.965778      0.8146345E-02  0.1786249E-01  0.1330651      0.1345056    
+QMMM:
+QMMM: SCF Energy =       28.09453465 KCal/mol,       117.54753299 KJ/mol
+QMMM: SCF Energy = Heat of formation
+ LPRINT:           2           3
+ 
+ |^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^|
+ | MD normal termination at   Fri Jun 18 16:25:07 EDT 2021   |
+ | MD total CPU time          0.50000E-01 seconds |
+ |      0 days  0 hours  0 minutes  0 seconds     |
+ 
+  SQM (ground sim%naesmd%state) took overall [s]:
+       0.429E-02
+  Davidson (excited states) took overall [s]:
+       0.316E-01
+  deriv (adiabatic forces) took overall [s]:
+       0.858E-02
+  nacT (NA derivatives) took overall [s]:
+        0.00    
+ |________________________________________________|
+ 
