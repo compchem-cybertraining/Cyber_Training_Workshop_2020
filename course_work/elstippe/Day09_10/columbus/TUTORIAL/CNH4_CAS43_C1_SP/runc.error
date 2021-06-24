@@ -1,0 +1,11 @@
+end of hernew
+ IGNORING BNDCHK
+*** End of DALTON calculation ***
+end of scfpq
+end of mcdrt
+end of mcuft
+ bummer (warning):timer: cpu_time << walltime.  If possible, increase core memory. event =1
+end of mcscf
+end of mcpc
+end of mcpc
+end of mcpc

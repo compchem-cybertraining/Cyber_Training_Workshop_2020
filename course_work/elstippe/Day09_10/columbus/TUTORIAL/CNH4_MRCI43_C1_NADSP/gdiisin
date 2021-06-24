@@ -1,0 +1,10 @@
+gdii   0
+geom   0geom      (1x,a2,1x,f6.0,4f14.8)
+forc cartforce    (3d15.7)
+intc   0intcfl
+fmfl   0intcfl
+nuse   5
+mess gdiismg
+lonl   0
+lalw   1
+bfgs

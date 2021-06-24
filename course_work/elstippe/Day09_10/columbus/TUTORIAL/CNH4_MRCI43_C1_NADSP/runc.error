@@ -1,0 +1,91 @@
+end of hernew
+ IGNORING BNDCHK
+*** End of DALTON calculation ***
+end of mcdrt
+end of mcuft
+ bummer (warning):timer: cpu_time << walltime.  If possible, increase core memory. event =1
+end of mcscf
+end of mcpc
+end of mcpc
+end of mcpc
+end of cidrt
+ prnopt=                     0
+end of tran
+global arrays:                1096109   (              8.36 MB)
+vdisk:                              0   (              0.00 MB)
+drt:                         59999994   (            228.88 MB)
+================================================================================
+ bummer (warning):resetting fileloc for seriel operation0
+ Main memory management:
+ global                1 DP per process
+ vdisk                 0 DP per process
+ stack                 0 DP per process
+ core          222822399 DP per process
+
+ intermediate da file sorting parameters:
+ nbuk=   2 lendar=  524288 nipbk=  349524 nipsg= 221827977
+  waiting after driverwrap ....                     0
+ Allocating              222822399  for ci step ...
+ bummer (warning):transition densities: resetting ref occupation number to 00
+ bummer (warning):overlap matrix: # small eigenvalues=1
+ bummer (warning):overlap matrix: # small eigenvalues=1
+ bummer (warning):overlap matrix: # small eigenvalues=2
+ bummer (warning):overlap matrix: # small eigenvalues=2
+ bummer (warning):overlap matrix: # small eigenvalues=1
+ bummer (warning):overlap matrix: # small eigenvalues=1
+ bummer (warning):overlap matrix: # small eigenvalues=1
+ bummer (warning):overlap matrix: # small eigenvalues=1
+ THREXT                     0
+ THREXT                     0
+ d2temp rec #1
+ d2temp 20 rec #                     2
+ THREXT                     0
+ THREXT                     0
+ d2temp rec #1
+ d2temp 20 rec #                     2
+ THREXT                     0
+ THREXT                     0
+ d2temp rec #1
+ d2temp 20 rec #                     2
+ DA1 ...
+ DA2 ...
+ DA3 ...
+ DA4 ...
+ DA5 ...
+end of ciudg
+ numv1=                   289
+end of cipc
+ numv1=                   289
+ numv1=                   289
+end of transci
+end of cidrt
+ prnopt=                     0
+end of tran
+ allocate: status=                     0
+end of cigrd
+ prnopt=                     0
+end of tran
+  SKIPPING TWOEXP ....
+ IGNORING BNDCHK
+*** End of DALTON calculation ***
+end of cart2int
+ allocate: status=                     0
+end of cigrd
+ prnopt=                     0
+end of tran
+  SKIPPING TWOEXP ....
+ IGNORING BNDCHK
+*** End of DALTON calculation ***
+end of cart2int
+ allocate: status=                     0
+end of cigrd
+ prnopt=                     0
+end of tran
+  SKIPPING TWOEXP ....
+ IGNORING BNDCHK
+*** End of DALTON calculation ***
+ prnopt=                     0
+end of tran
+ IGNORING BNDCHK
+*** End of DALTON calculation ***
+end of cart2int

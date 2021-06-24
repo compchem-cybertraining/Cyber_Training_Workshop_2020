@@ -1,0 +1,9 @@
+&slope 
+   crit     = 0, 
+   ort_type = Y, 
+   geomf    = "geom",   
+   grad1f   = "cartgrd.drt1.state3",   
+   grad2f   = "cartgrd.drt1.state2",   
+   coupf    = "cartgrd_total_times_DE", 
+   de       = -0.0359832384000072, 
+  /end slope  

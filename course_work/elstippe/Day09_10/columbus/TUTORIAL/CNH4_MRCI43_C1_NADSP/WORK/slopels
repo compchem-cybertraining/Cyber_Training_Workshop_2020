@@ -1,0 +1,139 @@
+       -------------------------------------
+                     SLOPE                  
+         Orthogonalization and analysis of  
+           nonadiabatic coupling vectors    
+       -------------------------------------
+       Author: M. Barbatti, 2005.          
+  
+ References:
+ -----------
+ Linear approximation: D.R. Yarkony, J. Chem. Phys. 114, 2601 (2001).
+ Orhogonalization:     D.R. Yarkony, J. Chem. Phys. 112, 2111 (2000).
+ Implementation:       M. Barbatti, A.J.A. Aquino and H. Lischka, J. Phys. Chem.
+  A 109, 5168 (2005).
+  
+ Input parameters:
+ -----------------
+ Criterium for orthog.     CRIT = 0.0000
+ Orthog. Method        ORT_TYPE = Y
+ Gradient state 1        GRAD1F = cartgrd.drt1.state3                     
+ Gradient state 2        GRAD2F = cartgrd.drt1.state2                     
+ Nonadiab. coupling       COUPF = cartgrd_total_times_DE                  
+  
+ Gradient 1 (a.u.)
+   0.00034   0.00213  -0.02724
+   0.00066   0.00421  -0.05392
+   0.00040  -0.00410  -0.01266
+  -0.00010   0.00602  -0.01187
+   0.00090  -0.03536   0.05043
+  -0.00219   0.02710   0.05527
+  
+ Gradient 2 (a.u.)
+   0.00358   0.02286  -0.29246
+  -0.00358  -0.02290   0.29301
+  -0.00017   0.00400  -0.00163
+   0.00022  -0.00369  -0.00223
+  -0.00014   0.00240   0.00185
+   0.00010  -0.00266   0.00146
+  
+ Nonadiabatic coupling vector (a.u.)
+  -0.00000  -0.00000  -0.00002
+  -0.00000   0.00001   0.00002
+   0.02572   0.00124   0.00041
+  -0.02572  -0.00124  -0.00041
+  -0.02189  -0.00106  -0.00035
+   0.02189   0.00105   0.00035
+  
+ Sum gradient
+   0.00196   0.01249  -0.15985
+  -0.00146  -0.00934   0.11955
+   0.00012  -0.00005  -0.00714
+   0.00006   0.00116  -0.00705
+   0.00038  -0.01648   0.02614
+  -0.00104   0.01222   0.02836
+  
+ Difference gradient
+   0.00162   0.01037  -0.13261
+  -0.00212  -0.01356   0.17347
+  -0.00028   0.00405   0.00551
+   0.00016  -0.00486   0.00482
+  -0.00052   0.01888  -0.02429
+   0.00115  -0.01488  -0.02691
+  
+ Othogonalized g vector
+   0.00162   0.01037  -0.13261
+  -0.00212  -0.01356   0.17347
+  -0.00029   0.00405   0.00551
+   0.00016  -0.00486   0.00482
+  -0.00052   0.01888  -0.02429
+   0.00114  -0.01488  -0.02691
+  
+ Othogonalized h vector
+   0.00000   0.00000  -0.00003
+  -0.00000   0.00000   0.00004
+   0.02572   0.00124   0.00041
+  -0.02572  -0.00124  -0.00041
+  -0.02189  -0.00105  -0.00036
+   0.02189   0.00105   0.00034
+  
+ Norm and orthog. information:
+ -----------------------------
+ g=(g2-g1)/2; s=(g2+g1)/2
+ g*h    =   0.0000. Original value.
+ g*hort =   0.0000   . New g and h obtained via Yarkony orthogonaliz.
+  
+ Frobenius norm of g, h and s vectors (hartree/a0): 
+ |g|    =   0.2235       |gort|   =   0.2235
+ |h|    =   0.0478       |hort|   =   0.0478
+ |s|    =   0.2052
+  
+ Parameters analysis:
+ --------------------
+ The linear adiabatic energies in the unscaled-orthogonal x-y space are:
+ Ea = sx*x+sy*y -/+dgh*[(x**2+y**2)/2+Delta_gh*(x**2-y**2)/2]**(1/2)
+  
+ Atomic units: 
+ Inclination: d_gh (hartree/a0) =    0.22858
+ Cylindrical: Delta_gh          =    0.91245
+ Tilt g:      s_x (hartree/a0)  =    0.17996
+ Tilt h:      s_y (hartree/a0)  =    0.00020
+  
+ eV,Angstrom units: 
+ Inclination: d_gh (eV/A) =            11.75
+ Cylindrical: Delta_gh    =             0.91
+ Tilt g:      s_x (eV/A)  =             9.25
+ Tilt h:      s_y (eV/A)  =             0.01
+  
+ sigma_x=s_x/d_gh; sigma_y=s_y/d_gh
+ Tilt g:      sigma_x     =            0.787
+ Tilt h:      sigma_y     =            0.001
+  
+ MAPLE output
+ ------------
+ Atomic units 
+ dgh:= 0.22858;
+ Delta:= 0.91245;
+ sx:= 0.17996;
+ sy:= 0.00020;
+ Esup:=sx*x+sy*y+dgh*((x^2+y^2)/2+Delta*(x^2-y^2)/2)^(1/2);
+ Einf:=sx*x+sy*y-dgh*((x^2+y^2)/2+Delta*(x^2-y^2)/2)^(1/2);
+  
+ eV, Angstrom units 
+ dgh:= 11.75;
+ Delta:=  0.91;
+ sx:=  9.25;
+ sy:=  0.01;
+ Esup:=sx*x+sy*y+dgh*((x^2+y^2)/2+Delta*(x^2-y^2)/2)^(1/2);
+ Einf:=sx*x+sy*y-dgh*((x^2+y^2)/2+Delta*(x^2-y^2)/2)^(1/2);
+  
+ MOLDEN output
+ -------------
+ Written to molden.nad (arbitrary value of freq.):
+ Vibration 1: g1
+ Vibration 2: g2
+ Vibration 3: s 
+ Vibration 4: g (original)
+ Vibration 5: h (original)
+ Vibration 6: g (orthogonal)
+ Vibration 7: h (orthogonal)
+ Wrinting Molden with DE =  -3.598323840000720E-002

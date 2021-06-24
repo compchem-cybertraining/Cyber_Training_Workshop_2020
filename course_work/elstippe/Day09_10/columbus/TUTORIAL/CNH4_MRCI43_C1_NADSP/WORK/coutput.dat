@@ -1,0 +1,13 @@
+>>> getputvector: len=   6 
+>>> Entering getputvector name=civfl.drt1 dlen=           2512 offset=          64478  operation=openrd <<<<<<<<< 
+>>> created new filename      civfl.drt1 (number   2 ) 
+>>> getputvector: len=   6 
+>>> Entering getputvector name=civfl.drt1 dlen=           2512 offset=         128955  operation=openrd <<<<<<<<< 
+>>> getputvector: len=   6 
+>>> Entering getputvector name=civfl.drt1 dlen=          37044 offset=          91911  operation=openrd <<<<<<<<< 
+>>> getputvector: len=   6 
+>>> Entering getputvector name=civfl.drt1 dlen=          37044 offset=         156388  operation=openrd <<<<<<<<< 
+>>> getputvector: len=   6 
+>>> Entering getputvector name=civfl.drt1 dlen=          24921 offset=          66990  operation=openrd <<<<<<<<< 
+>>> getputvector: len=   6 
+>>> Entering getputvector name=civfl.drt1 dlen=          24921 offset=         131467  operation=openrd <<<<<<<<< 

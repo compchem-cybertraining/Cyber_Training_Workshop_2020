@@ -1,0 +1,396 @@
+===========================================================
+===                   runc                              ===
+===           version 7.0 beta , Jan 2011               ===
+===          requires COLUMBUS version COL_7.0_beta     ===
+===                                                     ===
+===   written by: Thomas Mueller                        ===
+===   gradient ext. by: Michal Dallos                   ===
+===               Institute for Theoretical Chemistry   ===
+===               University of Vienna                  ===
+===               Waehringerstr. 17                     ===
+===               A-1090 Vienna, Austria                ===
+===   in revision by: Thomas Mueller, JSC, FZ Juelich   ===
+===               Felix Plasser, University of Vienna   ===
+===========================================================
+
+
+coremem. (seq.): 1700 MB,  coremem. (par.): 1700 MB
+Vdisk size: 0 DP
+Reading job control file control.run ...   done 
+Creating various directories ... 
+ done 
+Checking for illegal keywords and keyword combinations ... done 
+
+ nadcoupl with slope, gdiis or polyhes: computing all gradients
+
+ Nonadiabatic coupling term calculation type: DCI+DCSF
+  States involved in calcualtion:
+   DRT1,state2;  DRT1,state3
+
+Additional gradients computed:
+   DRT1,state2
+   DRT1,state3
+
+Checking for complete set of input files ... 
+mcscf calculation without preceeding scf calculation 
+will use 
+ /panfs/panfs.cbls.ccr.buffalo.edu/scratch/grp-cyberwksp21/elstippe/columbus/TUTORIAL/CNH4_MRCI43_C1_NADSP/mocoef as starting MOs 
+done
+
+ ++++++++++++++++++ input file generation +++++++++++++ 
+ runc start: Thu Jun 24 12:57:23 EDT 2021
+ 
+  runc start: Thu Jun 24 12:57:23 EDT 2021
+ 
+ starting unik.gets.x > unikls at Thu Jun 24 12:57:23 EDT 2021
+
+ -------------------- unik.gets.x ------------------------
+ --------------------------------------------------- 
+ starting hernew.x at Thu Jun 24 12:57:23 EDT 2021
+
+ -------------------- hernew.x ------------------------
+ --------------------------------------------------- 
+ ++++++++++++++++++++ ao integral calculation ++++++++++++++++
+starting dalton.x -m 1700 > hermitls at Thu Jun 24 12:57:23 EDT 2021
+
+ -------------------- dalton.x ------------------------
+  Nuclear repulsion energy:       38.5887042482
+
+ Irred. repr. : A       
+ # orbitals  :  36 
+ --------------------------------------------------- 
+  >>>>>>>>>>>>> info: preparing drt no 1 out of 1 <<<<<<
+starting mcdrt.x -m 1700 < mcdrtin > mcdrtls at Thu Jun 24 12:57:24 EDT 2021
+
+ -------------------- mcdrt.x ------------------------
+  Spin multiplicity: singlet 
+  Spatial symmetry (#): 1
+  Number of Configurations:          6 
+  --------------------------------------------------- 
+ starting mcuft.x at Thu Jun 24 12:57:24 EDT 2021
+
+ -------------------- mcuft.x ------------------------
+ --------------------------------------------------- 
+ ++++++++++++++++++++ MCSCF calculation +++++++++++++++
+info: taking mocoef file from /panfs/panfs.cbls.ccr.buffalo.edu/scratch/grp-cyberwksp21/elstippe/columbus/TUTORIAL/CNH4_MRCI43_C1_NADSP/mocoef
+starting mcscf.x -m 1700 at Thu Jun 24 12:57:24 EDT 2021
+
+ -------------------- mcscf.x ------------------------
+ Individual total energies for all states: 
+    DRT #1 state # 1 wt 0.333 total energy=      -94.398532384, rel. (eV)=   0.000000
+    DRT #1 state # 2 wt 0.333 total energy=      -94.053559786, rel. (eV)=   9.387186
+    DRT #1 state # 3 wt 0.333 total energy=      -94.013893350, rel. (eV)=  10.466565
+  --------------------------------------------------- 
+ starting mcpc.x -m 1700 < mcpcin > mcpcls at Thu Jun 24 12:57:25 EDT 2021
+
+ -------------------- mcpc.x ------------------------
+ --------------------------------------------------- 
+ starting mcpc.x -m 1700 < mcpcin > mcpcls at Thu Jun 24 12:57:25 EDT 2021
+
+ -------------------- mcpc.x ------------------------
+ --------------------------------------------------- 
+ starting mcpc.x -m 1700 < mcpcin > mcpcls at Thu Jun 24 12:57:26 EDT 2021
+
+ -------------------- mcpc.x ------------------------
+ --------------------------------------------------- 
+  using the MCSCF MOs ... 
+starting cidrt.x   -m 1700 < cidrtin > cidrtls  at Thu Jun 24 12:57:26 EDT 2021
+
+ -------------------- cidrt.x ------------------------
+ total number of orbitals            :    36
+ number of frozen core orbitals      :     2
+ number of frozen virtual orbitals   :     0
+ number of internal orbitals         :     7
+ number of external orbitals         :    27
+ spatial symmetry:   a  
+ 
+ total number of configurations      64477
+ number of reference configurations     6
+ --------------------------------------------------- 
+ starting tran.x -m 1700  at Thu Jun 24 12:57:26 EDT 2021
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ skipping cisrt.x call .... 
+starting ciudg.x -m 1700 at Thu Jun 24 12:57:26 EDT 2021
+
+  waiting after driverwrap ....                     0
+ -------------------- ciudg.x ------------------------
+ type of calculation:          mr-sdci
+ number of configurations:     64477
+ total mr-sdci energy              -94.6661949581 
+ last mr-sdci energy change           0.0000000000 
+ residual                             0.0000597110 
+  type of calculation:          mr-sdci
+ number of configurations:     64477
+ total mr-sdci energy              -94.3453203257 
+ last mr-sdci energy change           0.0000000081 
+ residual                             0.0000609630 
+  type of calculation:          mr-sdci
+ number of configurations:     64477
+ total mr-sdci energy              -94.3093370873 
+ last mr-sdci energy change           0.0000000000 
+ residual                             0.0000235560 
+  c0**2 =   0.91959475  c**2 (all zwalks) =   0.92070389
+ mr-sdci+(1-c0**2)*(eci-eref)             =     -94.687746252247 
+ mr-sdci+(1-c0**2)/(c0**2)*(eci-eref)     =     -94.689630601079 
+ mr-sdci+(1-c0**2)/(2*c0**2-1)*(eci-eref) =     -94.691876040103 
+ c0**2 =   0.89844292  c**2 (all zwalks) =   0.90962261
+ mr-sdci+(1-c0**2)*(eci-eref)             =     -94.374951521956 
+ mr-sdci+(1-c0**2)/(c0**2)*(eci-eref)     =     -94.378300936663 
+ mr-sdci+(1-c0**2)/(2*c0**2-1)*(eci-eref) =     -94.382504066622 
+ c0**2 =   0.89900793  c**2 (all zwalks) =   0.90132867
+ mr-sdci+(1-c0**2)*(eci-eref)             =     -94.339422041243 
+ mr-sdci+(1-c0**2)/(c0**2)*(eci-eref)     =     -94.342801702034 
+ mr-sdci+(1-c0**2)/(2*c0**2-1)*(eci-eref) =     -94.347036781785 
+ --------------------------------------------------- 
+ starting cipc.x -m 1700 < cipcin > cipcls at Thu Jun 24 12:57:34 EDT 2021
+
+ -------------------- cipc.x ------------------------
+ --------------------------------------------------- 
+  Calculating transition moment for (1,2) => (1,3)
+ starting transci.x -m 1700  at Thu Jun 24 12:57:35 EDT 2021
+
+ -------------------- transci.x ------------------------
+
+                          State No. 1            State No. 2
+
+   Space symmetry:            A                      A  
+   No. of CSFs:             64477                  64477
+   State energies:       -94.34532033           -94.30933709  a.u.
+
+   Transition energy:     0.03598324  a.u.
+   Transition energy:     0.98        eV
+
+       Transition moment components:
+
+                 x            y            z
+
+electron          0.000001    -0.000004    -0.000038  e*bohr
+frozen core       0.000000     0.000000     0.000000  e*bohr
+total (elec)      0.000001    -0.000004    -0.000038  e*bohr
+
+
+   Tr.dipole length:     0.000038    e*bohr
+   Oscillator strength :  0.000000
+   Einstein A coef.:     0.1442E-02  1/sec
+   Einstein B coef.:     0.5865E+00  sec/g
+
+                 x            y            z
+
+<L> electron    -0.002158    -0.013585     0.173790  e*bohr
+
+
+   <L> value length:     0.174333    e*bohr
+ --------------------------------------------------- 
+ 
+
+ +++++++++++ STARTING GRADIENTS AND NAD. COUPLINGS CALCULATION +++++++++++ 
+
+ Using new transition density code ... 
+INFO: this is a frozen core gradient calculation
+starting cidrt.x  -m 1700 < cidrtin.cigrd > cidrtls.cigrd at Thu Jun 24 12:57:35 EDT 2021
+
+ -------------------- cidrt.x ------------------------
+ total number of orbitals            :    36
+ number of frozen core orbitals      :     2
+ number of frozen virtual orbitals   :     0
+ number of internal orbitals         :     7
+ number of external orbitals         :    27
+ spatial symmetry:   a  
+ 
+ total number of configurations      64477
+ number of reference configurations     6
+ --------------------------------------------------- 
+ starting tran.x -m 1700  at Thu Jun 24 12:57:35 EDT 2021
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ ---- Computing 2 gradient(s)  ----
+
+ --- Computing gradient for DRT:1, State; 2
+
+starting cigrd.x -m 1700 at Thu Jun 24 12:57:36 EDT 2021
+
+ -------------------- cigrd.x ------------------------
+ Total energy (ciudg) :   -94.345320325503 
+  Effective energy     :   -94.345320327728 
+  Delta E              :     0.000000002225 
+  --------------------------------------------------- 
+ starting tran.x -m 1700  at Thu Jun 24 12:57:37 EDT 2021
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting dalton.x -m 1700 > abacusls at Thu Jun 24 12:57:37 EDT 2021
+
+ -------------------- dalton.x ------------------------
+  Nuclear repulsion energy:       38.5887042482
+
+ Irred. repr. : A       
+ # orbitals  :  36 
+ --------------------------------------------------- 
+ 
+ === Gradient of DRT 1, state 2 === 
+   0.337378D-03   0.212957D-02  -0.272429D-01
+   0.655711D-03   0.421223D-02  -0.539216D-01
+   0.400349D-03  -0.410085D-02  -0.126577D-01
+  -0.103309D-03   0.601860D-02  -0.118744D-01
+   0.900613D-03  -0.353619D-01   0.504260D-01
+  -0.219074D-02   0.271023D-01   0.552706D-01
+===================================
+ Found intcfl file, performing internal coordinate analysis.
+starting cart2int.x at Thu Jun 24 12:57:38 EDT 2021
+
+ -------------------- cart2int.x ------------------------
+ --------------------------------------------------- 
+  --- Computing gradient for DRT:1, State; 3
+
+starting cigrd.x -m 1700 at Thu Jun 24 12:57:38 EDT 2021
+
+ -------------------- cigrd.x ------------------------
+ Total energy (ciudg) :   -94.309337087262 
+  Effective energy     :   -94.309337086868 
+  Delta E              :    -0.000000000394 
+  --------------------------------------------------- 
+ starting tran.x -m 1700  at Thu Jun 24 12:57:39 EDT 2021
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting dalton.x -m 1700 > abacusls at Thu Jun 24 12:57:40 EDT 2021
+
+ -------------------- dalton.x ------------------------
+  Nuclear repulsion energy:       38.5887042482
+
+ Irred. repr. : A       
+ # orbitals  :  36 
+ --------------------------------------------------- 
+ 
+ === Gradient of DRT 1, state 3 === 
+   0.357967D-02   0.228602D-01  -0.292460D+00
+  -0.358424D-02  -0.229016D-01   0.293014D+00
+  -0.169268D-03   0.399548D-02  -0.162922D-02
+   0.216128D-03  -0.369500D-02  -0.222784D-02
+  -0.144516D-03   0.239887D-02   0.184665D-02
+   0.102225D-03  -0.265794D-02   0.145574D-02
+===================================
+ Found intcfl file, performing internal coordinate analysis.
+starting cart2int.x at Thu Jun 24 12:57:41 EDT 2021
+
+ -------------------- cart2int.x ------------------------
+ --------------------------------------------------- 
+ 
+---- Computing 1 couplings ---- 
+
+
+ -------- NAD. COUPLING for DRT:1 STATE:2 AND DRT:1 STATE:3 --------
+opening file =ciudgls
+opening file =ciudgls
+extracted: energy1= -94.3453203257   energy2=-94.3093370873   deltae=-0.0359832384000072
+starting cigrd.x -m 1700 at Thu Jun 24 12:57:41 EDT 2021
+
+ -------------------- cigrd.x ------------------------
+ Total energy (ciudg) :    -0.000000000003 
+  Effective energy     :     0.000000000164 
+  Delta E              :    -0.000000000167 
+  --------------------------------------------------- 
+ starting tran.x -m 1700  at Thu Jun 24 12:57:42 EDT 2021
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting dalton.x -m 1700 > abacusls at Thu Jun 24 12:57:43 EDT 2021
+
+ -------------------- dalton.x ------------------------
+  Nuclear repulsion energy:       38.5887042482
+
+ Irred. repr. : A       
+ # orbitals  :  36 
+ --------------------------------------------------- 
+ 
+ Calculating the Dx(r,s) term of D[CSF] nonadiabatic coupling term.
+dxcalc: INPUT LINE SEPARATOR  
+starting tran.x -m 1700  at Thu Jun 24 12:57:43 EDT 2021
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting dalton.x -m 1700 > abacusls at Thu Jun 24 12:57:44 EDT 2021
+
+ -------------------- dalton.x ------------------------
+  Nuclear repulsion energy:       38.5887042482
+
+ Irred. repr. : A       
+ # orbitals  :  36 
+ --------------------------------------------------- 
+ 
+ === Non-adiabatic coupling for DRT 1 STATE 2 and DRT 1 STATE 3 === 
+   1.345074E-06   2.412766E-05   4.317551E-04
+   4.018643E-06  -1.562584E-04  -5.830461E-04
+  -7.147145E-01  -3.451500E-02  -1.142632E-02
+   7.147226E-01   3.455280E-02   1.137631E-02
+   6.084141E-01   2.935966E-02   9.831035E-03
+  -6.084279E-01  -2.926441E-02  -9.623482E-03
+===================================
+
+ Norm of the nonadiabatic coupling vector: 
+ |h(drt1.state2,drt1.state3)|= 1.32911652143024 
+ Found intcfl file, performing internal coordinate analysis.
+starting cart2int.x at Thu Jun 24 12:57:44 EDT 2021
+
+ -------------------- cart2int.x ------------------------
+ --------------------------------------------------- 
+ 
+ Cross-check of the non-adiabatic coupling term:
+  DeltaE= -0.0359832384000072
+
+  <L>*dE form CIGRD   :    0.0000776518     0.0004888323    -0.0062535270
+  <L>*dE form NADCOUPL:    0.0000772845     0.0004868566    -0.0062295083
+ -------------------------------------------------------------------------
+  Difference          :    0.0000003674     0.0000019757    -0.0000240187
+
+ NOTE: This test is meaningless at a point of conical intersection!
+
+
+ Calling the slope program: 
+starting slope.x at Thu Jun 24 12:57:44 EDT 2021
+
+ -------------------- slope.x ------------------------
+ --------------------------------------------------- 
+ Phase correction of h vector
+No cartgrd.nad.drt1.state2.drt1.state3.old, cannot perform phase correction
+
+
+============== timings ===================
+
+   unik.gets.x    
+   hernew.x       
+   dalton.x       
+   mcdrt.x        
+   mcuft.x        
+   mcscf.x        
+   mcpc.x         
+   mcpc.x         
+   mcpc.x         
+   cidrt.x        
+   tran.x         
+ * ciudg.x          walltime    0:00:08
+   cipc.x         
+   transci.x      
+   cidrt.x        
+   tran.x         
+   cigrd.x        
+   tran.x         
+   dalton.x       
+   cart2int.x     
+   cigrd.x        
+   tran.x         
+   dalton.x       
+   cart2int.x     
+   cigrd.x        
+   tran.x         
+   dalton.x       
+   tran.x         
+   dalton.x       
+   cart2int.x     
+   slope.x        
+
+==========================================
+

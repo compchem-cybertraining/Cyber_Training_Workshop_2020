@@ -1,0 +1,5 @@
+ &input
+ motype=1,
+ molden=1,
+ minprt=0.01 
+/&end

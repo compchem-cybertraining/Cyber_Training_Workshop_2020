@@ -1,0 +1,58 @@
+end of hernew
+ IGNORING BNDCHK
+*** End of DALTON calculation ***
+end of mcdrt
+end of mcuft
+ bummer (warning):timer: cpu_time << walltime.  If possible, increase core memory. event =1
+end of mcscf
+end of mcpc
+end of mcpc
+end of mcpc
+end of cidrt
+ prnopt=                     0
+end of tran
+global arrays:                 967155   (              7.38 MB)
+vdisk:                              0   (              0.00 MB)
+drt:                         59999994   (            228.88 MB)
+================================================================================
+ bummer (warning):resetting fileloc for seriel operation0
+ Main memory management:
+ global                1 DP per process
+ vdisk                 0 DP per process
+ stack                 0 DP per process
+ core          222822399 DP per process
+
+ intermediate da file sorting parameters:
+ nbuk=   2 lendar=  524288 nipbk=  349524 nipsg= 221827977
+  waiting after driverwrap ....                     0
+ Allocating              222822399  for ci step ...
+ bummer (warning):overlap matrix: # small eigenvalues=1
+ bummer (warning):overlap matrix: # small eigenvalues=1
+ bummer (warning):overlap matrix: # small eigenvalues=1
+ bummer (warning):overlap matrix: # small eigenvalues=1
+ THREXT                     0
+ THREXT                     0
+ d2temp rec #1
+ d2temp 20 rec #                     2
+ DA1 ...
+ DA2 ...
+ DA3 ...
+ DA4 ...
+ DA5 ...
+end of ciudg
+ numv1=                   289
+end of cipc
+end of cidrt
+ prnopt=                     0
+end of tran
+ allocate: status=                     0
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+cigrd.x            00000000011FB274  Unknown               Unknown  Unknown
+libpthread-2.17.s  00007F02FB16A630  Unknown               Unknown  Unknown
+cigrd.x            0000000000442D9A  Unknown               Unknown  Unknown
+cigrd.x            0000000000418E31  Unknown               Unknown  Unknown
+cigrd.x            00000000004150ED  Unknown               Unknown  Unknown
+cigrd.x            000000000041181E  Unknown               Unknown  Unknown
+libc-2.17.so       00007F02FA8A9555  __libc_start_main     Unknown  Unknown
+cigrd.x            0000000000411729  Unknown               Unknown  Unknown

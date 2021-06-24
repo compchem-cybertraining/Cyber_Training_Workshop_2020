@@ -1,0 +1,13 @@
+>>> getputvector: len=   6 
+>>> Entering getputvector name=     civfl dlen=          64477 offset=              1  operation=openrd <<<<<<<<< 
+>>> created new filename           civfl (number   2 ) 
+>>> getputvector: len=   6 
+>>> Entering getputvector name=     civfl dlen=          64477 offset=          64478  operation=openrd <<<<<<<<< 
+>>> getputvector: len=   6 
+>>> Entering getputvector name=     civfl dlen=          32768 offset=              1  operation=openrd <<<<<<<<< 
+>>> getputvector: len=   6 
+>>> Entering getputvector name=     civfl dlen=          31709 offset=          32769  operation=openrd <<<<<<<<< 
+>>> getputvector: len=   6 
+>>> Entering getputvector name=     civfl dlen=          32768 offset=          64478  operation=openrd <<<<<<<<< 
+>>> getputvector: len=   6 
+>>> Entering getputvector name=     civfl dlen=          31709 offset=          97246  operation=openrd <<<<<<<<< 
