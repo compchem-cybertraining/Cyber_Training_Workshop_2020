@@ -1,0 +1,1505 @@
+ Program starting at 11:55:14.449 on 2021/06/24
+ Starting--nodes =            8
+ open file(in get_nps): control/filename
+ open file(in get_nps): control/IN.PARAM
+ QM / MD --nodes =            8           1
+     myid myid_md myid_qm myid_qm_un myid_kd myid_un myid_pw myid_lr
+       0       0       0       0          0       0       0       0
+       1               1       0          1       0       0       0
+       2               2       0          2       0       0       0
+       3               3       0          3       0       0       0
+       4               4       0          4       0       0       0
+       5               5       0          5       0       0       0
+       6               6       0          6       0       0       0
+       7               7       0          7       0       0       0
+ open file: control/filename
+ open file: control/IN.PARAM
+ open file: control/CONFIG
+ open file: control/CONFIG
+           6  KB (           6  KB ), allocated (remd_param_atom_alloc)
+ open file: control/CONFIG
+ open file: control/CONFIG
+          93  B  (           6  KB ), allocated (remd_param_atom2_alloc)
+          64  B  (           6  KB ), allocated (remd_thermostat_alloc)
+          64  B  (           6  KB ), allocated (remd_atom_thermostat_alloc)
+  
+  ----      Ab initio MD calculation with PW method      ----
+  
+     lstart :     F          iogpsz :     1
+       ntmd :     2           ntype :     2       ntmd_clus :     0
+   ntmd_ist :     2
+    ntot(0) :     3           natom :     3        nmd_clus :     0
+     lmdout :     T          ioskip :     1      lrestrict_a:     F
+     locoor :     T          lovelo :     T          loforc :     T
+ ioskipcoor :     1      ioskipvelo :     1      ioskipforc :     1
+       ifmd :     3            dtmd :     10.00       nstop :   200
+    lmdstop :     F
+  nstep_ini :     0
+    ioptmze :     2            lpvv :     F
+ ioptmze_cel:    -1
+    liscale :     F          iscnum :    25          iscstp :    20
+   lmomzero :     F
+       treq :    300.00
+       nnos :     1           nresn :     1           nyosh :     1
+     tomega :    500.00
+      lstat :     F         latomic :     F      nskip_atomi:     1
+    lstress :     F       nskip_stre:     5      nskp_strs_o:     0
+    ltotmom :     F       nskip_totm:     5
+      lsave :     T         lsreal8 :     T
+  rc_buffer :     0.0000
+  nmd_alloc :   105      nmd_buffer :     1
+  
+    h(MD) (L_1) :  1.32280819E+01  0.00000000E+00  0.00000000E+00
+          (L_2) :  8.09986409E-16  1.32280819E+01  0.00000000E+00
+          (L_3) :  8.09986409E-16  8.09986409E-16  1.32280819E+01
+    hcell (L_1) :  1.32280819E+01  0.00000000E+00  0.00000000E+00
+     (QM) (L_2) :  8.09986409E-16  1.32280819E+01  0.00000000E+00
+          (L_3) :  8.09986409E-16  8.09986409E-16  1.32280819E+01
+  
+ * MD atoms
+      zatom    watom            ntot icscale vrandom lfixion is2ist
+ 1:O    8.0  1.59994E+01           1    1       T       F       1
+ 2:H    1.0  1.00794E+00           2    1       T       F       2
+      ficmass ldispion dvector
+ 1:O     1.00   F
+ 2:H     1.00   F
+  (reduced species)
+ 1:O    8.0
+ 2:H    1.0
+  
+ * QM atoms
+      zatom    watom            ntot icscale lterminator
+ 1:O    8.0  1.59994E+01           1    1       F
+ 2:H    1.0  1.00794E+00           2    1       F
+  
+  read data (remd)   : cpu-time :  3.005027770996094E-003
+           3  KB (           9  KB ), allocated (remd_atom_alloc)
+         204  B  (           9  KB ), allocated (remd_qmmd_alloc)
+ open file: data/md_eng.d
+ open file: data/md_box.d
+ open file: data/md_cel.d
+ open file: data/md_spc.d
+ open file: data/md_ion.d
+ open file: data/md_vel.d
+ open file: data/md_frc.d
+
+  Center-of-mass(reduced unit) =   0.5000E+00  0.4642E+00  0.5000E+00
+  Momentum/atom(reduced unit)  =  -0.5439E+00 -0.6446E+00 -0.1553E+01
+  corrected total momentum  :    0.740149E-16  -0.277556E-16   0.111022E-15
+  initial temp.             :   219.0322
+  setup data ... done : cpu-time :  0.454907894134521     
+  
+                    setup coordinates : cpu-time :  5.698204040527344E-005
+           classical forces  ... done : cpu-time :  5.507469177246094E-005
+                  QM forces  ... done : cpu-time :  0.869092941284180     
+      0 -1.6874576565E+01 -1.68793266E+01  4.27506056E-03 (   300.0000 )
+  
+                              MD step : cpu-time :  0.870398998260498     
+  
+                    setup coordinates : cpu-time :  3.790855407714844E-005
+           classical forces  ... done : cpu-time :  3.099441528320312E-005
+                  QM forces  ... done : cpu-time :  0.299388170242310     
+      1 -1.6874575962E+01 -1.68792849E+01  3.89342260E-03 (   273.2188 )
+  
+                              MD step : cpu-time :  0.299566030502319     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  1.811981201171875E-005
+                  QM forces  ... done : cpu-time :  0.157713890075684     
+      2 -1.6874574820E+01 -1.68791665E+01  3.47929697E-03 (   244.1577 )
+  
+                              MD step : cpu-time :  0.157876014709473     
+  
+                    setup coordinates : cpu-time :  3.099441528320312E-005
+           classical forces  ... done : cpu-time :  1.788139343261719E-005
+                  QM forces  ... done : cpu-time :  0.158212184906006     
+      3 -1.6874573671E+01 -1.68789919E+01  3.06170792E-03 (   214.8537 )
+  
+                              MD step : cpu-time :  0.158367872238159     
+  
+                    setup coordinates : cpu-time :  3.218650817871094E-005
+           classical forces  ... done : cpu-time :  1.502037048339844E-005
+                  QM forces  ... done : cpu-time :  0.118149995803833     
+      4 -1.6874571812E+01 -1.68787840E+01  2.66735045E-03 (   187.1798 )
+  
+                              MD step : cpu-time :  0.118307113647461     
+  
+                    setup coordinates : cpu-time :  3.290176391601562E-005
+           classical forces  ... done : cpu-time :  1.597404479980469E-005
+                  QM forces  ... done : cpu-time :  0.154968023300171     
+      5 -1.6874570121E+01 -1.68785659E+01  2.31651431E-03 (   162.5601 )
+  
+                              MD step : cpu-time :  0.155136108398438     
+  
+                    setup coordinates : cpu-time :  2.884864807128906E-005
+           classical forces  ... done : cpu-time :  1.597404479980469E-005
+                  QM forces  ... done : cpu-time :  0.122993946075439     
+      6 -1.6874568782E+01 -1.68783585E+01  2.02462512E-03 (   142.0769 )
+  
+                              MD step : cpu-time :  0.123169898986816     
+  
+                    setup coordinates : cpu-time :  3.004074096679688E-005
+           classical forces  ... done : cpu-time :  1.692771911621094E-005
+                  QM forces  ... done : cpu-time :  0.151948928833008     
+      7 -1.6874567484E+01 -1.68781797E+01  1.80311688E-03 (   126.5327 )
+  
+                              MD step : cpu-time :  0.152107000350952     
+  
+                    setup coordinates : cpu-time :  3.290176391601562E-005
+           classical forces  ... done : cpu-time :  1.597404479980469E-005
+                  QM forces  ... done : cpu-time :  0.152404069900513     
+      8 -1.6874566645E+01 -1.68780441E+01  1.66013263E-03 (   116.4989 )
+  
+                              MD step : cpu-time :  0.152563095092773     
+  
+                    setup coordinates : cpu-time :  3.290176391601562E-005
+           classical forces  ... done : cpu-time :  1.788139343261719E-005
+                  QM forces  ... done : cpu-time :  0.160450220108032     
+      9 -1.6874566015E+01 -1.68779622E+01  1.60267171E-03 (   112.4666 )
+  
+                              MD step : cpu-time :  0.160613775253296     
+  
+                    setup coordinates : cpu-time :  3.099441528320312E-005
+           classical forces  ... done : cpu-time :  1.621246337890625E-005
+                  QM forces  ... done : cpu-time :  0.157251834869385     
+     10 -1.6874565706E+01 -1.68779406E+01  1.63707429E-03 (   114.8808 )
+  
+                              MD step : cpu-time :  0.157413005828857     
+  
+                    setup coordinates : cpu-time :  3.314018249511719E-005
+           classical forces  ... done : cpu-time :  2.408027648925781E-005
+                  QM forces  ... done : cpu-time :  0.152114868164062     
+     11 -1.6874565741E+01 -1.68779816E+01  1.76990824E-03 (   124.2023 )
+  
+                              MD step : cpu-time :  0.152284145355225     
+  
+                    setup coordinates : cpu-time :  3.290176391601562E-005
+           classical forces  ... done : cpu-time :  1.597404479980469E-005
+                  QM forces  ... done : cpu-time :  0.154887199401855     
+     12 -1.6874566098E+01 -1.68780833E+01  2.00792595E-03 (   140.9051 )
+  
+                              MD step : cpu-time :  0.155046939849854     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  1.907348632812500E-005
+                  QM forces  ... done : cpu-time :  0.151591062545776     
+     13 -1.6874566777E+01 -1.68782388E+01  2.35695410E-03 (   165.3979 )
+  
+                              MD step : cpu-time :  0.151761054992676     
+  
+                    setup coordinates : cpu-time :  2.694129943847656E-005
+           classical forces  ... done : cpu-time :  1.502037048339844E-005
+                  QM forces  ... done : cpu-time :  0.145509004592896     
+     14 -1.6874567591E+01 -1.68784360E+01  2.82009025E-03 (   197.8983 )
+  
+                              MD step : cpu-time :  0.145660877227783     
+  
+                    setup coordinates : cpu-time :  3.314018249511719E-005
+           classical forces  ... done : cpu-time :  1.788139343261719E-005
+                  QM forces  ... done : cpu-time :  0.155333042144775     
+     15 -1.6874568428E+01 -1.68786576E+01  3.39391276E-03 (   238.1659 )
+  
+                              MD step : cpu-time :  0.155496120452881     
+  
+                    setup coordinates : cpu-time :  3.099441528320312E-005
+           classical forces  ... done : cpu-time :  1.597404479980469E-005
+                  QM forces  ... done : cpu-time :  0.152386903762817     
+     16 -1.6874569340E+01 -1.68788808E+01  4.06364203E-03 (   285.1638 )
+  
+                              MD step : cpu-time :  0.152546882629395     
+  
+                    setup coordinates : cpu-time :  3.004074096679688E-005
+           classical forces  ... done : cpu-time :  2.002716064453125E-005
+                  QM forces  ... done : cpu-time :  0.154771089553833     
+     17 -1.6874569756E+01 -1.68790780E+01  4.79899819E-03 (   336.7670 )
+  
+                              MD step : cpu-time :  0.154932975769043     
+  
+                    setup coordinates : cpu-time :  3.314018249511719E-005
+           classical forces  ... done : cpu-time :  1.907348632812500E-005
+                  QM forces  ... done : cpu-time :  0.110551834106445     
+     18 -1.6874570092E+01 -1.68792199E+01  5.54930393E-03 (   389.4193 )
+  
+                              MD step : cpu-time :  0.110716104507446     
+  
+                    setup coordinates : cpu-time :  3.004074096679688E-005
+           classical forces  ... done : cpu-time :  1.692771911621094E-005
+                  QM forces  ... done : cpu-time :  0.104190111160278     
+     19 -1.6874570097E+01 -1.68792780E+01  6.24649452E-03 (   438.3443 )
+  
+                              MD step : cpu-time :  0.104351997375488     
+  
+                    setup coordinates : cpu-time :  2.908706665039062E-005
+           classical forces  ... done : cpu-time :  1.692771911621094E-005
+                  QM forces  ... done : cpu-time :  0.109884023666382     
+     20 -1.6874568884E+01 -1.68792310E+01  6.81423258E-03 (   478.1850 )
+  
+                              MD step : cpu-time :  0.110071897506714     
+  
+                    setup coordinates : cpu-time :  3.004074096679688E-005
+           classical forces  ... done : cpu-time :  1.502037048339844E-005
+                  QM forces  ... done : cpu-time :  0.117177009582520     
+     21 -1.6874566836E+01 -1.68790697E+01  7.18279877E-03 (   504.0489 )
+  
+                              MD step : cpu-time :  0.117332220077515     
+  
+                    setup coordinates : cpu-time :  3.886222839355469E-005
+           classical forces  ... done : cpu-time :  1.597404479980469E-005
+                  QM forces  ... done : cpu-time :  0.146974086761475     
+     22 -1.6874563513E+01 -1.68788023E+01  7.31133147E-03 (   513.0686 )
+  
+                              MD step : cpu-time :  0.147142887115479     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  2.002716064453125E-005
+                  QM forces  ... done : cpu-time :  0.154417991638184     
+     23 -1.6874559172E+01 -1.68784559E+01  7.20104456E-03 (   505.3293 )
+  
+                              MD step : cpu-time :  0.154583930969238     
+  
+                    setup coordinates : cpu-time :  3.409385681152344E-005
+           classical forces  ... done : cpu-time :  2.002716064453125E-005
+                  QM forces  ... done : cpu-time :  0.151682853698730     
+     24 -1.6874554624E+01 -1.68780737E+01  6.89711736E-03 (   484.0014 )
+  
+                              MD step : cpu-time :  0.151844978332520     
+  
+                    setup coordinates : cpu-time :  3.218650817871094E-005
+           classical forces  ... done : cpu-time :  1.788139343261719E-005
+                  QM forces  ... done : cpu-time :  0.152085065841675     
+     25 -1.6874550244E+01 -1.68777080E+01  6.47658859E-03 (   454.4910 )
+  
+                              MD step : cpu-time :  0.152247190475464     
+  
+                    setup coordinates : cpu-time :  3.290176391601562E-005
+           classical forces  ... done : cpu-time :  2.002716064453125E-005
+                  QM forces  ... done : cpu-time :  0.157578945159912     
+     26 -1.6874546364E+01 -1.68774108E+01  6.02599176E-03 (   422.8706 )
+  
+                              MD step : cpu-time :  0.157744884490967     
+  
+                    setup coordinates : cpu-time :  3.004074096679688E-005
+           classical forces  ... done : cpu-time :  1.597404479980469E-005
+                  QM forces  ... done : cpu-time :  0.151889085769653     
+     27 -1.6874543187E+01 -1.68772244E+01  5.62037276E-03 (   394.4065 )
+  
+                              MD step : cpu-time :  0.152065038681030     
+  
+                    setup coordinates : cpu-time :  3.290176391601562E-005
+           classical forces  ... done : cpu-time :  1.597404479980469E-005
+                  QM forces  ... done : cpu-time :  0.158747196197510     
+     28 -1.6874541067E+01 -1.68771741E+01  5.30845758E-03 (   372.5181 )
+  
+                              MD step : cpu-time :  0.158905029296875     
+  
+                    setup coordinates : cpu-time :  3.385543823242188E-005
+           classical forces  ... done : cpu-time :  1.907348632812500E-005
+                  QM forces  ... done : cpu-time :  0.152092933654785     
+     29 -1.6874540125E+01 -1.68772652E+01  5.10861896E-03 (   358.4945 )
+  
+                              MD step : cpu-time :  0.152256011962891     
+  
+                    setup coordinates : cpu-time :  3.099441528320312E-005
+           classical forces  ... done : cpu-time :  1.788139343261719E-005
+                  QM forces  ... done : cpu-time :  0.143958091735840     
+     30 -1.6874540168E+01 -1.68774831E+01  5.01101557E-03 (   351.6452 )
+  
+                              MD step : cpu-time :  0.144134044647217     
+  
+                    setup coordinates : cpu-time :  3.290176391601562E-005
+           classical forces  ... done : cpu-time :  1.692771911621094E-005
+                  QM forces  ... done : cpu-time :  0.153380155563354     
+     31 -1.6874541033E+01 -1.68777972E+01  4.98487452E-03 (   349.8108 )
+  
+                              MD step : cpu-time :  0.153538942337036     
+  
+                    setup coordinates : cpu-time :  3.099441528320312E-005
+           classical forces  ... done : cpu-time :  1.907348632812500E-005
+                  QM forces  ... done : cpu-time :  0.160658836364746     
+     32 -1.6874542136E+01 -1.68781663E+01  4.98785061E-03 (   350.0196 )
+  
+                              MD step : cpu-time :  0.160825967788696     
+  
+                    setup coordinates : cpu-time :  3.099441528320312E-005
+           classical forces  ... done : cpu-time :  1.597404479980469E-005
+                  QM forces  ... done : cpu-time :  0.157048940658569     
+     33 -1.6874543462E+01 -1.68785459E+01  4.97525749E-03 (   349.1359 )
+  
+                              MD step : cpu-time :  0.157207965850830     
+  
+                    setup coordinates : cpu-time :  3.409385681152344E-005
+           classical forces  ... done : cpu-time :  1.788139343261719E-005
+                  QM forces  ... done : cpu-time :  0.156021118164062     
+     34 -1.6874544654E+01 -1.68788948E+01  4.90963185E-03 (   344.5307 )
+  
+                              MD step : cpu-time :  0.156197071075439     
+  
+                    setup coordinates : cpu-time :  3.385543823242188E-005
+           classical forces  ... done : cpu-time :  1.811981201171875E-005
+                  QM forces  ... done : cpu-time :  0.116695880889893     
+     35 -1.6874544819E+01 -1.68791798E+01  4.76761681E-03 (   334.5649 )
+  
+                              MD step : cpu-time :  0.116859912872314     
+  
+                    setup coordinates : cpu-time :  3.314018249511719E-005
+           classical forces  ... done : cpu-time :  1.597404479980469E-005
+                  QM forces  ... done : cpu-time :  0.116621017456055     
+     36 -1.6874544360E+01 -1.68793798E+01  4.54089173E-03 (   318.6546 )
+  
+                              MD step : cpu-time :  0.116783142089844     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  1.883506774902344E-005
+                  QM forces  ... done : cpu-time :  0.110807180404663     
+     37 -1.6874542910E+01 -1.68794859E+01  4.23738226E-03 (   297.3559 )
+  
+                              MD step : cpu-time :  0.110969781875610     
+  
+                    setup coordinates : cpu-time :  3.004074096679688E-005
+           classical forces  ... done : cpu-time :  1.811981201171875E-005
+                  QM forces  ... done : cpu-time :  0.105264902114868     
+     38 -1.6874540080E+01 -1.68795008E+01  3.87663281E-03 (   272.0406 )
+  
+                              MD step : cpu-time :  0.105425119400024     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  1.597404479980469E-005
+                  QM forces  ... done : cpu-time :  0.110931158065796     
+     39 -1.6874536885E+01 -1.68794363E+01  3.48307160E-03 (   244.4226 )
+  
+                              MD step : cpu-time :  0.111104965209961     
+  
+                    setup coordinates : cpu-time :  3.600120544433594E-005
+           classical forces  ... done : cpu-time :  3.194808959960938E-005
+                  QM forces  ... done : cpu-time :  0.148998022079468     
+     40 -1.6874533840E+01 -1.68793104E+01  3.08292821E-03 (   216.3428 )
+  
+                              MD step : cpu-time :  0.149178981781006     
+  
+                    setup coordinates : cpu-time :  2.908706665039062E-005
+           classical forces  ... done : cpu-time :  1.692771911621094E-005
+                  QM forces  ... done : cpu-time :  0.160138130187988     
+     41 -1.6874530929E+01 -1.68791439E+01  2.70053809E-03 (   189.5088 )
+  
+                              MD step : cpu-time :  0.160297155380249     
+  
+                    setup coordinates : cpu-time :  3.385543823242188E-005
+           classical forces  ... done : cpu-time :  1.811981201171875E-005
+                  QM forces  ... done : cpu-time :  0.119151830673218     
+     42 -1.6874527892E+01 -1.68789585E+01  2.35601498E-03 (   165.3320 )
+  
+                              MD step : cpu-time :  0.119316816329956     
+  
+                    setup coordinates : cpu-time :  3.504753112792969E-005
+           classical forces  ... done : cpu-time :  1.597404479980469E-005
+                  QM forces  ... done : cpu-time :  0.147607088088989     
+     43 -1.6874525237E+01 -1.68787742E+01  2.06390301E-03 (   144.8332 )
+  
+                              MD step : cpu-time :  0.147776126861572     
+  
+                    setup coordinates : cpu-time :  3.004074096679688E-005
+           classical forces  ... done : cpu-time :  1.597404479980469E-005
+                  QM forces  ... done : cpu-time :  0.116698980331421     
+     44 -1.6874522885E+01 -1.68786090E+01  1.83526009E-03 (   128.7884 )
+  
+                              MD step : cpu-time :  0.116884946823120     
+  
+                    setup coordinates : cpu-time :  2.908706665039062E-005
+           classical forces  ... done : cpu-time :  1.692771911621094E-005
+                  QM forces  ... done : cpu-time :  0.151931047439575     
+     45 -1.6874520713E+01 -1.68784772E+01  1.67802041E-03 (   117.7542 )
+  
+                              MD step : cpu-time :  0.152095079421997     
+  
+                    setup coordinates : cpu-time :  2.980232238769531E-005
+           classical forces  ... done : cpu-time :  1.502037048339844E-005
+                  QM forces  ... done : cpu-time :  0.112168073654175     
+     46 -1.6874518907E+01 -1.68783900E+01  1.59823825E-03 (   112.1555 )
+  
+                              MD step : cpu-time :  0.112326860427856     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  1.716613769531250E-005
+                  QM forces  ... done : cpu-time :  0.150315999984741     
+     47 -1.6874517471E+01 -1.68783543E+01  1.60121230E-03 (   112.3642 )
+  
+                              MD step : cpu-time :  0.150478124618530     
+  
+                    setup coordinates : cpu-time :  3.004074096679688E-005
+           classical forces  ... done : cpu-time :  1.978874206542969E-005
+                  QM forces  ... done : cpu-time :  0.147891044616699     
+     48 -1.6874516476E+01 -1.68783737E+01  1.69244319E-03 (   118.7663 )
+  
+                              MD step : cpu-time :  0.148054838180542     
+  
+                    setup coordinates : cpu-time :  3.314018249511719E-005
+           classical forces  ... done : cpu-time :  1.502037048339844E-005
+                  QM forces  ... done : cpu-time :  0.155277013778687     
+     49 -1.6874515845E+01 -1.68784473E+01  1.87756234E-03 (   131.7569 )
+  
+                              MD step : cpu-time :  0.155445098876953     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  2.002716064453125E-005
+                  QM forces  ... done : cpu-time :  0.153053045272827     
+     50 -1.6874515576E+01 -1.68785700E+01  2.16167183E-03 (   151.6941 )
+  
+                              MD step : cpu-time :  0.153235912322998     
+  
+                    setup coordinates : cpu-time :  3.218650817871094E-005
+           classical forces  ... done : cpu-time :  1.597404479980469E-005
+                  QM forces  ... done : cpu-time :  0.151331901550293     
+     51 -1.6874515549E+01 -1.68787323E+01  2.54826635E-03 (   178.8232 )
+  
+                              MD step : cpu-time :  0.151494026184082     
+  
+                    setup coordinates : cpu-time :  3.099441528320312E-005
+           classical forces  ... done : cpu-time :  2.002716064453125E-005
+                  QM forces  ... done : cpu-time :  0.149796962738037     
+     52 -1.6874515711E+01 -1.68789195E+01  3.03662406E-03 (   213.0934 )
+  
+                              MD step : cpu-time :  0.149966001510620     
+  
+                    setup coordinates : cpu-time :  3.409385681152344E-005
+           classical forces  ... done : cpu-time :  1.692771911621094E-005
+                  QM forces  ... done : cpu-time :  0.149289131164551     
+     53 -1.6874515931E+01 -1.68791126E+01  3.61845733E-03 (   253.9232 )
+  
+                              MD step : cpu-time :  0.149454116821289     
+  
+                    setup coordinates : cpu-time :  3.600120544433594E-005
+           classical forces  ... done : cpu-time :  1.883506774902344E-005
+                  QM forces  ... done : cpu-time :  0.143663167953491     
+     54 -1.6874515772E+01 -1.68792880E+01  4.27419390E-03 (   299.9392 )
+  
+                              MD step : cpu-time :  0.143834829330444     
+  
+                    setup coordinates : cpu-time :  3.004074096679688E-005
+           classical forces  ... done : cpu-time :  1.716613769531250E-005
+                  QM forces  ... done : cpu-time :  0.151250839233398     
+     55 -1.6874515066E+01 -1.68794197E+01  4.96889078E-03 (   348.6892 )
+  
+                              MD step : cpu-time :  0.151414155960083     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  1.811981201171875E-005
+                  QM forces  ... done : cpu-time :  0.111954927444458     
+     56 -1.6874514396E+01 -1.68794818E+01  5.65074547E-03 (   396.5379 )
+  
+                              MD step : cpu-time :  0.112123966217041     
+  
+                    setup coordinates : cpu-time :  3.004074096679688E-005
+           classical forces  ... done : cpu-time :  1.883506774902344E-005
+                  QM forces  ... done : cpu-time :  0.108099222183228     
+     57 -1.6874513214E+01 -1.68794527E+01  6.25714528E-03 (   439.0917 )
+  
+                              MD step : cpu-time :  0.108258962631226     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  1.811981201171875E-005
+                  QM forces  ... done : cpu-time :  0.110189914703369     
+     58 -1.6874510986E+01 -1.68793198E+01  6.72415427E-03 (   471.8638 )
+  
+                              MD step : cpu-time :  0.110357046127319     
+  
+                    setup coordinates : cpu-time :  3.290176391601562E-005
+           classical forces  ... done : cpu-time :  2.408027648925781E-005
+                  QM forces  ... done : cpu-time :  0.147067070007324     
+     59 -1.6874507473E+01 -1.68790847E+01  7.00157737E-03 (   491.3318 )
+  
+                              MD step : cpu-time :  0.147235870361328     
+  
+                    setup coordinates : cpu-time :  3.218650817871094E-005
+           classical forces  ... done : cpu-time :  1.502037048339844E-005
+                  QM forces  ... done : cpu-time :  0.145416975021362     
+     60 -1.6874502719E+01 -1.68787652E+01  7.06833761E-03 (   496.0167 )
+  
+                              MD step : cpu-time :  0.145577192306519     
+  
+                    setup coordinates : cpu-time :  2.980232238769531E-005
+           classical forces  ... done : cpu-time :  1.502037048339844E-005
+                  QM forces  ... done : cpu-time :  0.145212173461914     
+     61 -1.6874497486E+01 -1.68783955E+01  6.94018524E-03 (   487.0236 )
+  
+                              MD step : cpu-time :  0.145365953445435     
+  
+                    setup coordinates : cpu-time :  3.099441528320312E-005
+           classical forces  ... done : cpu-time :  1.692771911621094E-005
+                  QM forces  ... done : cpu-time :  0.152217149734497     
+     62 -1.6874492164E+01 -1.68780211E+01  6.66727638E-03 (   467.8724 )
+  
+                              MD step : cpu-time :  0.152386903762817     
+  
+                    setup coordinates : cpu-time :  3.099441528320312E-005
+           classical forces  ... done : cpu-time :  2.312660217285156E-005
+                  QM forces  ... done : cpu-time :  0.145575046539307     
+     63 -1.6874487261E+01 -1.68776914E+01  6.31952618E-03 (   443.4692 )
+  
+                              MD step : cpu-time :  0.145745038986206     
+  
+                    setup coordinates : cpu-time :  3.099441528320312E-005
+           classical forces  ... done : cpu-time :  1.907348632812500E-005
+                  QM forces  ... done : cpu-time :  0.153179883956909     
+     64 -1.6874483113E+01 -1.68774508E+01  5.96821711E-03 (   418.8163 )
+  
+                              MD step : cpu-time :  0.153355121612549     
+  
+                    setup coordinates : cpu-time :  3.290176391601562E-005
+           classical forces  ... done : cpu-time :  2.598762512207031E-005
+                  QM forces  ... done : cpu-time :  0.152070045471191     
+     65 -1.6874479831E+01 -1.68773308E+01  5.66931670E-03 (   397.8411 )
+  
+                              MD step : cpu-time :  0.152264833450317     
+  
+                    setup coordinates : cpu-time :  3.314018249511719E-005
+           classical forces  ... done : cpu-time :  1.883506774902344E-005
+                  QM forces  ... done : cpu-time :  0.142686128616333     
+     66 -1.6874477621E+01 -1.68773452E+01  5.45375001E-03 (   382.7139 )
+  
+                              MD step : cpu-time :  0.142850160598755     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  1.788139343261719E-005
+                  QM forces  ... done : cpu-time :  0.140284061431885     
+     67 -1.6874476454E+01 -1.68774883E+01  5.32545095E-03 (   373.7106 )
+  
+                              MD step : cpu-time :  0.140446901321411     
+  
+                    setup coordinates : cpu-time :  3.290176391601562E-005
+           classical forces  ... done : cpu-time :  1.716613769531250E-005
+                  QM forces  ... done : cpu-time :  0.143306970596313     
+     68 -1.6874476119E+01 -1.68777374E+01  5.26540640E-03 (   369.4970 )
+  
+                              MD step : cpu-time :  0.143466949462891     
+  
+                    setup coordinates : cpu-time :  3.004074096679688E-005
+           classical forces  ... done : cpu-time :  2.002716064453125E-005
+                  QM forces  ... done : cpu-time :  0.143498897552490     
+     69 -1.6874476441E+01 -1.68780571E+01  5.23904387E-03 (   367.6470 )
+  
+                              MD step : cpu-time :  0.143664121627808     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  1.692771911621094E-005
+                  QM forces  ... done : cpu-time :  0.143759965896606     
+     70 -1.6874477092E+01 -1.68784059E+01  5.20596728E-03 (   365.3259 )
+  
+                              MD step : cpu-time :  0.143923997879028     
+  
+                    setup coordinates : cpu-time :  3.004074096679688E-005
+           classical forces  ... done : cpu-time :  1.597404479980469E-005
+                  QM forces  ... done : cpu-time :  0.142066955566406     
+     71 -1.6874477788E+01 -1.68787422E+01  5.12907200E-03 (   359.9298 )
+  
+                              MD step : cpu-time :  0.142225980758667     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  1.692771911621094E-005
+                  QM forces  ... done : cpu-time :  0.110558986663818     
+     72 -1.6874477636E+01 -1.68790309E+01  4.98266545E-03 (   349.6558 )
+  
+                              MD step : cpu-time :  0.110723018646240     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  2.002716064453125E-005
+                  QM forces  ... done : cpu-time :  0.110425949096680     
+     73 -1.6874476752E+01 -1.68792468E+01  4.75515706E-03 (   333.6905 )
+  
+                              MD step : cpu-time :  0.110590934753418     
+  
+                    setup coordinates : cpu-time :  3.099441528320312E-005
+           classical forces  ... done : cpu-time :  1.907348632812500E-005
+                  QM forces  ... done : cpu-time :  0.107580900192261     
+     74 -1.6874475070E+01 -1.68793762E+01  4.45048222E-03 (   312.3101 )
+  
+                              MD step : cpu-time :  0.107745885848999     
+  
+                    setup coordinates : cpu-time :  3.123283386230469E-005
+           classical forces  ... done : cpu-time :  1.597404479980469E-005
+                  QM forces  ... done : cpu-time :  0.115056991577148     
+     75 -1.6874472602E+01 -1.68794175E+01  4.08496195E-03 (   286.6599 )
+  
+                              MD step : cpu-time :  0.115214109420776     
+  
+                    setup coordinates : cpu-time :  3.695487976074219E-005
+           classical forces  ... done : cpu-time :  1.716613769531250E-005
+                  QM forces  ... done : cpu-time :  0.139912843704224     
+     76 -1.6874470185E+01 -1.68793785E+01  3.68164272E-03 (   258.3572 )
+  
+                              MD step : cpu-time :  0.140080928802490     
+  
+                    setup coordinates : cpu-time :  3.099441528320312E-005
+           classical forces  ... done : cpu-time :  1.597404479980469E-005
+                  QM forces  ... done : cpu-time :  0.107102155685425     
+     77 -1.6874467534E+01 -1.68792742E+01  3.26715217E-03 (   229.2706 )
+  
+                              MD step : cpu-time :  0.107263088226318     
+  
+                    setup coordinates : cpu-time :  3.504753112792969E-005
+           classical forces  ... done : cpu-time :  1.692771911621094E-005
+                  QM forces  ... done : cpu-time :  0.154594898223877     
+     78 -1.6874464731E+01 -1.68791237E+01  2.86606344E-03 (   201.1244 )
+  
+                              MD step : cpu-time :  0.154758930206299     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  1.716613769531250E-005
+                  QM forces  ... done : cpu-time :  0.109927892684937     
+     79 -1.6874461688E+01 -1.68789476E+01  2.49913266E-03 (   175.3752 )
+  
+                              MD step : cpu-time :  0.110100030899048     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  1.597404479980469E-005
+                  QM forces  ... done : cpu-time :  0.143084049224854     
+     80 -1.6874458812E+01 -1.68787660E+01  2.18180920E-03 (   153.1072 )
+  
+                              MD step : cpu-time :  0.143244981765747     
+  
+                    setup coordinates : cpu-time :  3.004074096679688E-005
+           classical forces  ... done : cpu-time :  1.692771911621094E-005
+                  QM forces  ... done : cpu-time :  0.109035968780518     
+     81 -1.6874456483E+01 -1.68785974E+01  1.92547774E-03 (   135.1193 )
+  
+                              MD step : cpu-time :  0.109193086624146     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  1.907348632812500E-005
+                  QM forces  ... done : cpu-time :  0.143939018249512     
+     82 -1.6874454454E+01 -1.68784572E+01  1.73873443E-03 (   122.0147 )
+  
+                              MD step : cpu-time :  0.144109964370728     
+  
+                    setup coordinates : cpu-time :  3.004074096679688E-005
+           classical forces  ... done : cpu-time :  1.597404479980469E-005
+                  QM forces  ... done : cpu-time :  0.104630947113037     
+     83 -1.6874452811E+01 -1.68783579E+01  1.62798585E-03 (   114.2430 )
+  
+                              MD step : cpu-time :  0.104790925979614     
+  
+                    setup coordinates : cpu-time :  3.099441528320312E-005
+           classical forces  ... done : cpu-time :  2.098083496093750E-005
+                  QM forces  ... done : cpu-time :  0.152304172515869     
+     84 -1.6874451626E+01 -1.68783083E+01  1.59861605E-03 (   112.1820 )
+  
+                              MD step : cpu-time :  0.152465105056763     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  1.811981201171875E-005
+                  QM forces  ... done : cpu-time :  0.147293806076050     
+     85 -1.6874451015E+01 -1.68783138E+01  1.65613265E-03 (   116.2182 )
+  
+                              MD step : cpu-time :  0.147459030151367     
+  
+                    setup coordinates : cpu-time :  3.290176391601562E-005
+           classical forces  ... done : cpu-time :  1.692771911621094E-005
+                  QM forces  ... done : cpu-time :  0.151698112487793     
+     86 -1.6874450854E+01 -1.68783756E+01  1.80633835E-03 (   126.7588 )
+  
+                              MD step : cpu-time :  0.151883840560913     
+  
+                    setup coordinates : cpu-time :  3.099441528320312E-005
+           classical forces  ... done : cpu-time :  1.716613769531250E-005
+                  QM forces  ... done : cpu-time :  0.154026985168457     
+     87 -1.6874451171E+01 -1.68784910E+01  2.05492192E-03 (   144.2030 )
+  
+                              MD step : cpu-time :  0.154247999191284     
+  
+                    setup coordinates : cpu-time :  2.908706665039062E-005
+           classical forces  ... done : cpu-time :  1.692771911621094E-005
+                  QM forces  ... done : cpu-time :  0.145312070846558     
+     88 -1.6874451868E+01 -1.68786527E+01  2.40651996E-03 (   168.8762 )
+  
+                              MD step : cpu-time :  0.145470142364502     
+  
+                    setup coordinates : cpu-time :  3.600120544433594E-005
+           classical forces  ... done : cpu-time :  1.502037048339844E-005
+                  QM forces  ... done : cpu-time :  0.148115873336792     
+     89 -1.6874452818E+01 -1.68788487E+01  2.86275815E-03 (   200.8925 )
+  
+                              MD step : cpu-time :  0.148279905319214     
+  
+                    setup coordinates : cpu-time :  3.314018249511719E-005
+           classical forces  ... done : cpu-time :  1.883506774902344E-005
+                  QM forces  ... done : cpu-time :  0.148782014846802     
+     90 -1.6874454086E+01 -1.68790622E+01  3.41869206E-03 (   239.9048 )
+  
+                              MD step : cpu-time :  0.148947000503540     
+  
+                    setup coordinates : cpu-time :  3.004074096679688E-005
+           classical forces  ... done : cpu-time :  1.597404479980469E-005
+                  QM forces  ... done : cpu-time :  0.145168066024780     
+     91 -1.6874455164E+01 -1.68792719E+01  4.05973329E-03 (   284.8895 )
+  
+                              MD step : cpu-time :  0.145327091217041     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  1.502037048339844E-005
+                  QM forces  ... done : cpu-time :  0.151787996292114     
+     92 -1.6874455898E+01 -1.68794531E+01  4.75675563E-03 (   333.8027 )
+  
+                              MD step : cpu-time :  0.151942014694214     
+  
+                    setup coordinates : cpu-time :  2.884864807128906E-005
+           classical forces  ... done : cpu-time :  1.502037048339844E-005
+                  QM forces  ... done : cpu-time :  0.145065069198608     
+     93 -1.6874456402E+01 -1.68795798E+01  5.46374839E-03 (   383.4155 )
+  
+                              MD step : cpu-time :  0.145216941833496     
+  
+                    setup coordinates : cpu-time :  3.004074096679688E-005
+           classical forces  ... done : cpu-time :  1.597404479980469E-005
+                  QM forces  ... done : cpu-time :  0.108490943908691     
+     94 -1.6874456554E+01 -1.68796286E+01  6.12023115E-03 (   429.4838 )
+  
+                              MD step : cpu-time :  0.108644008636475     
+  
+                    setup coordinates : cpu-time :  2.789497375488281E-005
+           classical forces  ... done : cpu-time :  1.406669616699219E-005
+                  QM forces  ... done : cpu-time :  0.105222940444946     
+     95 -1.6874456222E+01 -1.68795826E+01  6.65911965E-03 (   467.3000 )
+  
+                              MD step : cpu-time :  0.105369091033936     
+  
+                    setup coordinates : cpu-time :  2.980232238769531E-005
+           classical forces  ... done : cpu-time :  1.502037048339844E-005
+                  QM forces  ... done : cpu-time :  0.113479137420654     
+     96 -1.6874455089E+01 -1.68794369E+01  7.02104186E-03 (   492.6977 )
+  
+                              MD step : cpu-time :  0.113631010055542     
+  
+                    setup coordinates : cpu-time :  2.980232238769531E-005
+           classical forces  ... done : cpu-time :  1.502037048339844E-005
+                  QM forces  ... done : cpu-time :  0.141669034957886     
+     97 -1.6874452918E+01 -1.68792011E+01  7.17032472E-03 (   503.1736 )
+  
+                              MD step : cpu-time :  0.141833782196045     
+  
+                    setup coordinates : cpu-time :  2.908706665039062E-005
+           classical forces  ... done : cpu-time :  1.502037048339844E-005
+                  QM forces  ... done : cpu-time :  0.148591995239258     
+     98 -1.6874449905E+01 -1.68789004E+01  7.10643071E-03 (   498.6898 )
+  
+                              MD step : cpu-time :  0.148748159408569     
+  
+                    setup coordinates : cpu-time :  2.694129943847656E-005
+           classical forces  ... done : cpu-time :  1.502037048339844E-005
+                  QM forces  ... done : cpu-time :  0.146360874176025     
+     99 -1.6874446755E+01 -1.68785724E+01  6.86510290E-03 (   481.7548 )
+  
+                              MD step : cpu-time :  0.146514892578125     
+  
+                    setup coordinates : cpu-time :  3.099441528320312E-005
+           classical forces  ... done : cpu-time :  2.217292785644531E-005
+                  QM forces  ... done : cpu-time :  0.143436908721924     
+    100 -1.6874443823E+01 -1.68782606E+01  6.50867051E-03 (   456.7423 )
+  
+                              MD step : cpu-time :  0.143605947494507     
+  
+                    setup coordinates : cpu-time :  3.218650817871094E-005
+           classical forces  ... done : cpu-time :  1.788139343261719E-005
+                  QM forces  ... done : cpu-time :  0.148644924163818     
+    101 -1.6874441475E+01 -1.68780069E+01  6.10817079E-03 (   428.6375 )
+  
+                              MD step : cpu-time :  0.148808002471924     
+  
+                    setup coordinates : cpu-time :  3.099441528320312E-005
+           classical forces  ... done : cpu-time :  1.621246337890625E-005
+                  QM forces  ... done : cpu-time :  0.149875879287720     
+    102 -1.6874439847E+01 -1.68778436E+01  5.72615515E-03 (   401.8298 )
+  
+                              MD step : cpu-time :  0.150035142898560     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  1.811981201171875E-005
+                  QM forces  ... done : cpu-time :  0.141584873199463     
+    103 -1.6874439090E+01 -1.68777889E+01  5.40460906E-03 (   379.2654 )
+  
+                              MD step : cpu-time :  0.141751050949097     
+  
+                    setup coordinates : cpu-time :  2.884864807128906E-005
+           classical forces  ... done : cpu-time :  1.502037048339844E-005
+                  QM forces  ... done : cpu-time :  0.141961097717285     
+    104 -1.6874439173E+01 -1.68778442E+01  5.16115765E-03 (   362.1814 )
+  
+                              MD step : cpu-time :  0.142122983932495     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  1.597404479980469E-005
+                  QM forces  ... done : cpu-time :  0.151590108871460     
+    105 -1.6874439983E+01 -1.68779956E+01  4.99107294E-03 (   350.2458 )
+  
+                              MD step : cpu-time :  0.151755809783936     
+  
+                    setup coordinates : cpu-time :  3.004074096679688E-005
+           classical forces  ... done : cpu-time :  1.597404479980469E-005
+                  QM forces  ... done : cpu-time :  0.148681163787842     
+    106 -1.6874441407E+01 -1.68782176E+01  4.87350057E-03 (   341.9952 )
+  
+                              MD step : cpu-time :  0.148839235305786     
+  
+                    setup coordinates : cpu-time :  2.980232238769531E-005
+           classical forces  ... done : cpu-time :  1.502037048339844E-005
+                  QM forces  ... done : cpu-time :  0.138826131820679     
+    107 -1.6874443099E+01 -1.68784773E+01  4.77920810E-03 (   335.3783 )
+  
+                              MD step : cpu-time :  0.138981819152832     
+  
+                    setup coordinates : cpu-time :  3.409385681152344E-005
+           classical forces  ... done : cpu-time :  1.502037048339844E-005
+                  QM forces  ... done : cpu-time :  0.142613887786865     
+    108 -1.6874444840E+01 -1.68787408E+01  4.67800954E-03 (   328.2767 )
+  
+                              MD step : cpu-time :  0.142779111862183     
+  
+                    setup coordinates : cpu-time :  3.099441528320312E-005
+           classical forces  ... done : cpu-time :  1.597404479980469E-005
+                  QM forces  ... done : cpu-time :  0.115870952606201     
+    109 -1.6874446044E+01 -1.68789768E+01  4.54536862E-03 (   318.9687 )
+  
+                              MD step : cpu-time :  0.116030931472778     
+  
+                    setup coordinates : cpu-time :  3.695487976074219E-005
+           classical forces  ... done : cpu-time :  1.716613769531250E-005
+                  QM forces  ... done : cpu-time :  0.104965925216675     
+    110 -1.6874446463E+01 -1.68791615E+01  4.36585343E-03 (   306.3713 )
+  
+                              MD step : cpu-time :  0.105138063430786     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  1.907348632812500E-005
+                  QM forces  ... done : cpu-time :  0.113523006439209     
+    111 -1.6874446220E+01 -1.68792797E+01  4.13468177E-03 (   290.1490 )
+  
+                              MD step : cpu-time :  0.113680839538574     
+  
+                    setup coordinates : cpu-time :  3.004074096679688E-005
+           classical forces  ... done : cpu-time :  1.597404479980469E-005
+                  QM forces  ... done : cpu-time :  0.113162994384766     
+    112 -1.6874445322E+01 -1.68793258E+01  3.85734931E-03 (   270.6873 )
+  
+                              MD step : cpu-time :  0.113319158554077     
+  
+                    setup coordinates : cpu-time :  3.290176391601562E-005
+           classical forces  ... done : cpu-time :  2.098083496093750E-005
+                  QM forces  ... done : cpu-time :  0.110316038131714     
+    113 -1.6874443612E+01 -1.68793028E+01  3.54718479E-03 (   248.9217 )
+  
+                              MD step : cpu-time :  0.110481977462769     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  1.692771911621094E-005
+                  QM forces  ... done : cpu-time :  0.107353210449219     
+    114 -1.6874441603E+01 -1.68792208E+01  3.22131948E-03 (   226.0543 )
+  
+                              MD step : cpu-time :  0.107519865036011     
+  
+                    setup coordinates : cpu-time :  3.314018249511719E-005
+           classical forces  ... done : cpu-time :  1.907348632812500E-005
+                  QM forces  ... done : cpu-time :  0.111979007720947     
+    115 -1.6874439772E+01 -1.68790945E+01  2.89838237E-03 (   203.3924 )
+  
+                              MD step : cpu-time :  0.112142086029053     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  1.716613769531250E-005
+                  QM forces  ... done : cpu-time :  0.110131025314331     
+    116 -1.6874437764E+01 -1.68789414E+01  2.59691525E-03 (   182.2371 )
+  
+                              MD step : cpu-time :  0.110304117202759     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  1.692771911621094E-005
+                  QM forces  ... done : cpu-time :  0.159098148345947     
+    117 -1.6874436003E+01 -1.68787797E+01  2.33254554E-03 (   163.6851 )
+  
+                              MD step : cpu-time :  0.159271001815796     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  1.907348632812500E-005
+                  QM forces  ... done : cpu-time :  0.113979816436768     
+    118 -1.6874434464E+01 -1.68786270E+01  2.11886425E-03 (   148.6901 )
+  
+                              MD step : cpu-time :  0.114163875579834     
+  
+                    setup coordinates : cpu-time :  3.409385681152344E-005
+           classical forces  ... done : cpu-time :  1.788139343261719E-005
+                  QM forces  ... done : cpu-time :  0.152623176574707     
+    119 -1.6874433085E+01 -1.68784989E+01  1.96719387E-03 (   138.0467 )
+  
+                              MD step : cpu-time :  0.152795076370239     
+  
+                    setup coordinates : cpu-time :  3.290176391601562E-005
+           classical forces  ... done : cpu-time :  1.907348632812500E-005
+                  QM forces  ... done : cpu-time :  0.110671997070312     
+    120 -1.6874431979E+01 -1.68784083E+01  1.88713237E-03 (   132.4285 )
+  
+                              MD step : cpu-time :  0.110841989517212     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  1.811981201171875E-005
+                  QM forces  ... done : cpu-time :  0.149281978607178     
+    121 -1.6874431136E+01 -1.68783652E+01  1.88738737E-03 (   132.4464 )
+  
+                              MD step : cpu-time :  0.149460077285767     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  1.883506774902344E-005
+                  QM forces  ... done : cpu-time :  0.154170989990234     
+    122 -1.6874430764E+01 -1.68783760E+01  1.97611607E-03 (   138.6728 )
+  
+                              MD step : cpu-time :  0.154333829879761     
+  
+                    setup coordinates : cpu-time :  3.099441528320312E-005
+           classical forces  ... done : cpu-time :  1.597404479980469E-005
+                  QM forces  ... done : cpu-time :  0.140597105026245     
+    123 -1.6874430865E+01 -1.68784430E+01  2.16116045E-03 (   151.6582 )
+  
+                              MD step : cpu-time :  0.140757083892822     
+  
+                    setup coordinates : cpu-time :  3.004074096679688E-005
+           classical forces  ... done : cpu-time :  1.692771911621094E-005
+                  QM forces  ... done : cpu-time :  0.151075124740601     
+    124 -1.6874431342E+01 -1.68785641E+01  2.44940272E-03 (   171.8855 )
+  
+                              MD step : cpu-time :  0.151232004165649     
+  
+                    setup coordinates : cpu-time :  3.099441528320312E-005
+           classical forces  ... done : cpu-time :  1.788139343261719E-005
+                  QM forces  ... done : cpu-time :  0.149878978729248     
+    125 -1.6874432092E+01 -1.68787328E+01  2.84514720E-03 (   199.6566 )
+  
+                              MD step : cpu-time :  0.150043010711670     
+  
+                    setup coordinates : cpu-time :  3.290176391601562E-005
+           classical forces  ... done : cpu-time :  1.597404479980469E-005
+                  QM forces  ... done : cpu-time :  0.151684999465942     
+    126 -1.6874433140E+01 -1.68789373E+01  3.34732450E-03 (   234.8966 )
+  
+                              MD step : cpu-time :  0.151849031448364     
+  
+                    setup coordinates : cpu-time :  3.290176391601562E-005
+           classical forces  ... done : cpu-time :  2.002716064453125E-005
+                  QM forces  ... done : cpu-time :  0.141865968704224     
+    127 -1.6874434265E+01 -1.68791607E+01  3.94608618E-03 (   276.9144 )
+  
+                              MD step : cpu-time :  0.142029047012329     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  1.788139343261719E-005
+                  QM forces  ... done : cpu-time :  0.152698040008545     
+    128 -1.6874435214E+01 -1.68793818E+01  4.61835491E-03 (   324.0905 )
+  
+                              MD step : cpu-time :  0.152862787246704     
+  
+                    setup coordinates : cpu-time :  3.099441528320312E-005
+           classical forces  ... done : cpu-time :  1.811981201171875E-005
+                  QM forces  ... done : cpu-time :  0.107846021652222     
+    129 -1.6874436335E+01 -1.68795761E+01  5.32359389E-03 (   373.5802 )
+  
+                              MD step : cpu-time :  0.108007192611694     
+  
+                    setup coordinates : cpu-time :  4.291534423828125E-005
+           classical forces  ... done : cpu-time :  1.692771911621094E-005
+                  QM forces  ... done : cpu-time :  0.151818990707397     
+    130 -1.6874437085E+01 -1.68797184E+01  6.00497843E-03 (   421.3960 )
+  
+                              MD step : cpu-time :  0.151994943618774     
+  
+                    setup coordinates : cpu-time :  3.099441528320312E-005
+           classical forces  ... done : cpu-time :  1.597404479980469E-005
+                  QM forces  ... done : cpu-time :  0.142810106277466     
+    131 -1.6874436806E+01 -1.68797864E+01  6.59384739E-03 (   462.7196 )
+  
+                              MD step : cpu-time :  0.142972946166992     
+  
+                    setup coordinates : cpu-time :  3.290176391601562E-005
+           classical forces  ... done : cpu-time :  1.621246337890625E-005
+                  QM forces  ... done : cpu-time :  0.108297824859619     
+    132 -1.6874436194E+01 -1.68797650E+01  7.02028936E-03 (   492.6449 )
+  
+                              MD step : cpu-time :  0.108460903167725     
+  
+                    setup coordinates : cpu-time :  2.908706665039062E-005
+           classical forces  ... done : cpu-time :  1.692771911621094E-005
+                  QM forces  ... done : cpu-time :  0.107931137084961     
+    133 -1.6874435067E+01 -1.68796507E+01  7.23217736E-03 (   507.5140 )
+  
+                              MD step : cpu-time :  0.108094215393066     
+  
+                    setup coordinates : cpu-time :  3.290176391601562E-005
+           classical forces  ... done : cpu-time :  1.788139343261719E-005
+                  QM forces  ... done : cpu-time :  0.151320219039917     
+    134 -1.6874432986E+01 -1.68794533E+01  7.20996502E-03 (   505.9553 )
+  
+                              MD step : cpu-time :  0.151486873626709     
+  
+                    setup coordinates : cpu-time :  3.004074096679688E-005
+           classical forces  ... done : cpu-time :  1.597404479980469E-005
+                  QM forces  ... done : cpu-time :  0.137965917587280     
+    135 -1.6874430565E+01 -1.68791958E+01  6.97237590E-03 (   489.2826 )
+  
+                              MD step : cpu-time :  0.138128995895386     
+  
+                    setup coordinates : cpu-time :  3.314018249511719E-005
+           classical forces  ... done : cpu-time :  1.597404479980469E-005
+                  QM forces  ... done : cpu-time :  0.141687870025635     
+    136 -1.6874428147E+01 -1.68789108E+01  6.57238924E-03 (   461.2138 )
+  
+                              MD step : cpu-time :  0.141849040985107     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  2.002716064453125E-005
+                  QM forces  ... done : cpu-time :  0.143810033798218     
+    137 -1.6874425921E+01 -1.68786350E+01  6.08193004E-03 (   426.7961 )
+  
+                              MD step : cpu-time :  0.143972873687744     
+  
+                    setup coordinates : cpu-time :  3.409385681152344E-005
+           classical forces  ... done : cpu-time :  1.811981201171875E-005
+                  QM forces  ... done : cpu-time :  0.151713848114014     
+    138 -1.6874424082E+01 -1.68784023E+01  5.57352545E-03 (   391.1191 )
+  
+                              MD step : cpu-time :  0.151902198791504     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  1.788139343261719E-005
+                  QM forces  ... done : cpu-time :  0.143723964691162     
+    139 -1.6874422783E+01 -1.68782393E+01  5.10577326E-03 (   358.2948 )
+  
+                              MD step : cpu-time :  0.143890857696533     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  2.121925354003906E-005
+                  QM forces  ... done : cpu-time :  0.143692970275879     
+    140 -1.6874422169E+01 -1.68781610E+01  4.71601792E-03 (   330.9439 )
+  
+                              MD step : cpu-time :  0.143876075744629     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  1.597404479980469E-005
+                  QM forces  ... done : cpu-time :  0.138028144836426     
+    141 -1.6874422296E+01 -1.68781703E+01  4.41962321E-03 (   310.1446 )
+  
+                              MD step : cpu-time :  0.138190984725952     
+  
+                    setup coordinates : cpu-time :  3.004074096679688E-005
+           classical forces  ... done : cpu-time :  1.597404479980469E-005
+                  QM forces  ... done : cpu-time :  0.151226043701172     
+    142 -1.6874423081E+01 -1.68782590E+01  4.21367930E-03 (   295.6926 )
+  
+                              MD step : cpu-time :  0.151390075683594     
+  
+                    setup coordinates : cpu-time :  2.980232238769531E-005
+           classical forces  ... done : cpu-time :  1.502037048339844E-005
+                  QM forces  ... done : cpu-time :  0.149936199188232     
+    143 -1.6874424391E+01 -1.68784097E+01  4.08228366E-03 (   286.4720 )
+  
+                              MD step : cpu-time :  0.150094985961914     
+  
+                    setup coordinates : cpu-time :  3.385543823242188E-005
+           classical forces  ... done : cpu-time :  1.811981201171875E-005
+                  QM forces  ... done : cpu-time :  0.140756845474243     
+    144 -1.6874426039E+01 -1.68785994E+01  4.00220280E-03 (   280.8524 )
+  
+                              MD step : cpu-time :  0.140921831130981     
+  
+                    setup coordinates : cpu-time :  3.409385681152344E-005
+           classical forces  ... done : cpu-time :  1.811981201171875E-005
+                  QM forces  ... done : cpu-time :  0.143105983734131     
+    145 -1.6874427824E+01 -1.68788024E+01  3.94777034E-03 (   277.0326 )
+  
+                              MD step : cpu-time :  0.143283128738403     
+  
+                    setup coordinates : cpu-time :  3.290176391601562E-005
+           classical forces  ... done : cpu-time :  1.811981201171875E-005
+                  QM forces  ... done : cpu-time :  0.114115953445435     
+    146 -1.6874429171E+01 -1.68789942E+01  3.89541983E-03 (   273.3589 )
+  
+                              MD step : cpu-time :  0.114276885986328     
+  
+                    setup coordinates : cpu-time :  3.719329833984375E-005
+           classical forces  ... done : cpu-time :  1.478195190429688E-005
+                  QM forces  ... done : cpu-time :  0.108010053634644     
+    147 -1.6874430250E+01 -1.68791535E+01  3.82551783E-03 (   268.4536 )
+  
+                              MD step : cpu-time :  0.108179092407227     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  1.692771911621094E-005
+                  QM forces  ... done : cpu-time :  0.107913017272949     
+    148 -1.6874431059E+01 -1.68792645E+01  3.72527780E-03 (   261.4193 )
+  
+                              MD step : cpu-time :  0.108082056045532     
+  
+                    setup coordinates : cpu-time :  3.099441528320312E-005
+           classical forces  ... done : cpu-time :  1.788139343261719E-005
+                  QM forces  ... done : cpu-time :  0.107877969741821     
+    149 -1.6874431255E+01 -1.68793178E+01  3.58958266E-03 (   251.8970 )
+  
+                              MD step : cpu-time :  0.108036041259766     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  2.002716064453125E-005
+                  QM forces  ... done : cpu-time :  0.110473871231079     
+    150 -1.6874430857E+01 -1.68793109E+01  3.41992444E-03 (   239.9913 )
+  
+                              MD step : cpu-time :  0.110643863677979     
+  
+                    setup coordinates : cpu-time :  3.314018249511719E-005
+           classical forces  ... done : cpu-time :  1.478195190429688E-005
+                  QM forces  ... done : cpu-time :  0.110251188278198     
+    151 -1.6874430303E+01 -1.68792472E+01  3.22324623E-03 (   226.1895 )
+  
+                              MD step : cpu-time :  0.110420942306519     
+  
+                    setup coordinates : cpu-time :  3.004074096679688E-005
+           classical forces  ... done : cpu-time :  1.597404479980469E-005
+                  QM forces  ... done : cpu-time :  0.107750177383423     
+    152 -1.6874429772E+01 -1.68791354E+01  3.01097561E-03 (   211.2935 )
+  
+                              MD step : cpu-time :  0.107920169830322     
+  
+                    setup coordinates : cpu-time :  3.099441528320312E-005
+           classical forces  ... done : cpu-time :  1.692771911621094E-005
+                  QM forces  ... done : cpu-time :  0.115139961242676     
+    153 -1.6874428935E+01 -1.68789882E+01  2.79756336E-03 (   196.3175 )
+  
+                              MD step : cpu-time :  0.115298032760620     
+  
+                    setup coordinates : cpu-time :  3.290176391601562E-005
+           classical forces  ... done : cpu-time :  1.692771911621094E-005
+                  QM forces  ... done : cpu-time :  0.148550033569336     
+    154 -1.6874428133E+01 -1.68788205E+01  2.59783067E-03 (   182.3013 )
+  
+                              MD step : cpu-time :  0.148712873458862     
+  
+                    setup coordinates : cpu-time :  4.005432128906250E-005
+           classical forces  ... done : cpu-time :  1.788139343261719E-005
+                  QM forces  ... done : cpu-time :  0.115688085556030     
+    155 -1.6874427408E+01 -1.68786486E+01  2.42711900E-03 (   170.3217 )
+  
+                              MD step : cpu-time :  0.115870952606201     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  1.716613769531250E-005
+                  QM forces  ... done : cpu-time :  0.154126882553101     
+    156 -1.6874426712E+01 -1.68784886E+01  2.30041984E-03 (   161.4307 )
+  
+                              MD step : cpu-time :  0.154304027557373     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  1.907348632812500E-005
+                  QM forces  ... done : cpu-time :  0.114301919937134     
+    157 -1.6874426233E+01 -1.68783555E+01  2.23212956E-03 (   156.6385 )
+  
+                              MD step : cpu-time :  0.114470005035400     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  1.597404479980469E-005
+                  QM forces  ... done : cpu-time :  0.163274049758911     
+    158 -1.6874425993E+01 -1.68782625E+01  2.23645943E-03 (   156.9423 )
+  
+                              MD step : cpu-time :  0.163458108901978     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  1.692771911621094E-005
+                  QM forces  ... done : cpu-time :  0.157326936721802     
+    159 -1.6874426172E+01 -1.68782202E+01  2.32757026E-03 (   163.3359 )
+  
+                              MD step : cpu-time :  0.157500982284546     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  1.597404479980469E-005
+                  QM forces  ... done : cpu-time :  0.155151128768921     
+    160 -1.6874426841E+01 -1.68782362E+01  2.51939304E-03 (   176.7970 )
+  
+                              MD step : cpu-time :  0.155344963073730     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  1.597404479980469E-005
+                  QM forces  ... done : cpu-time :  0.166249036788940     
+    161 -1.6874427866E+01 -1.68783135E+01  2.82480973E-03 (   198.2295 )
+  
+                              MD step : cpu-time :  0.166431903839111     
+  
+                    setup coordinates : cpu-time :  3.314018249511719E-005
+           classical forces  ... done : cpu-time :  1.883506774902344E-005
+                  QM forces  ... done : cpu-time :  0.171053171157837     
+    162 -1.6874429106E+01 -1.68784508E+01  3.25371191E-03 (   228.3274 )
+  
+                              MD step : cpu-time :  0.171235084533691     
+  
+                    setup coordinates : cpu-time :  3.004074096679688E-005
+           classical forces  ... done : cpu-time :  2.002716064453125E-005
+                  QM forces  ... done : cpu-time :  0.160250902175903     
+    163 -1.6874430724E+01 -1.68786414E+01  3.80899787E-03 (   267.2943 )
+  
+                              MD step : cpu-time :  0.160420894622803     
+  
+                    setup coordinates : cpu-time :  3.314018249511719E-005
+           classical forces  ... done : cpu-time :  2.002716064453125E-005
+                  QM forces  ... done : cpu-time :  0.162916898727417     
+    164 -1.6874432454E+01 -1.68788724E+01  4.48205167E-03 (   314.5255 )
+  
+                              MD step : cpu-time :  0.163096189498901     
+  
+                    setup coordinates : cpu-time :  3.099441528320312E-005
+           classical forces  ... done : cpu-time :  1.883506774902344E-005
+                  QM forces  ... done : cpu-time :  0.160712003707886     
+    165 -1.6874434060E+01 -1.68791253E+01  5.24607698E-03 (   368.1405 )
+  
+                              MD step : cpu-time :  0.160883903503418     
+  
+                    setup coordinates : cpu-time :  3.290176391601562E-005
+           classical forces  ... done : cpu-time :  1.621246337890625E-005
+                  QM forces  ... done : cpu-time :  0.172671794891357     
+    166 -1.6874435629E+01 -1.68793764E+01  6.05026553E-03 (   424.5740 )
+  
+                              MD step : cpu-time :  0.172852993011475     
+  
+                    setup coordinates : cpu-time :  3.600120544433594E-005
+           classical forces  ... done : cpu-time :  1.907348632812500E-005
+                  QM forces  ... done : cpu-time :  0.167186021804810     
+    167 -1.6874436779E+01 -1.68795992E+01  6.81982432E-03 (   478.5774 )
+  
+                              MD step : cpu-time :  0.167371988296509     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  2.312660217285156E-005
+                  QM forces  ... done : cpu-time :  0.119609832763672     
+    168 -1.6874437953E+01 -1.68797682E+01  7.46230052E-03 (   523.6628 )
+  
+                              MD step : cpu-time :  0.119786024093628     
+  
+                    setup coordinates : cpu-time :  3.504753112792969E-005
+           classical forces  ... done : cpu-time :  1.788139343261719E-005
+                  QM forces  ... done : cpu-time :  0.118004083633423     
+    169 -1.6874439078E+01 -1.68798630E+01  7.88698057E-03 (   553.4645 )
+  
+                              MD step : cpu-time :  0.118179082870483     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  1.907348632812500E-005
+                  QM forces  ... done : cpu-time :  0.157402992248535     
+    170 -1.6874439392E+01 -1.68798731E+01  8.02969225E-03 (   563.4792 )
+  
+                              MD step : cpu-time :  0.157589912414551     
+  
+                    setup coordinates : cpu-time :  3.290176391601562E-005
+           classical forces  ... done : cpu-time :  1.907348632812500E-005
+                  QM forces  ... done : cpu-time :  0.115844011306763     
+    171 -1.6874438505E+01 -1.68798006E+01  7.87233211E-03 (   552.4365 )
+  
+                              MD step : cpu-time :  0.116031885147095     
+  
+                    setup coordinates : cpu-time :  4.220008850097656E-005
+           classical forces  ... done : cpu-time :  1.883506774902344E-005
+                  QM forces  ... done : cpu-time :  0.154860019683838     
+    172 -1.6874437401E+01 -1.68796600E+01  7.44842614E-03 (   522.6892 )
+  
+                              MD step : cpu-time :  0.155046224594116     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  2.598762512207031E-005
+                  QM forces  ... done : cpu-time :  0.159291982650757     
+    173 -1.6874436881E+01 -1.68794753E+01  6.83297459E-03 (   479.5002 )
+  
+                              MD step : cpu-time :  0.159475803375244     
+  
+                    setup coordinates : cpu-time :  3.099441528320312E-005
+           classical forces  ... done : cpu-time :  2.002716064453125E-005
+                  QM forces  ... done : cpu-time :  0.161185979843140     
+    174 -1.6874436278E+01 -1.68792751E+01  6.12029344E-03 (   429.4882 )
+  
+                              MD step : cpu-time :  0.161373138427734     
+  
+                    setup coordinates : cpu-time :  3.600120544433594E-005
+           classical forces  ... done : cpu-time :  1.788139343261719E-005
+                  QM forces  ... done : cpu-time :  0.160660028457642     
+    175 -1.6874435529E+01 -1.68790866E+01  5.39783924E-03 (   378.7904 )
+  
+                              MD step : cpu-time :  0.160855054855347     
+  
+                    setup coordinates : cpu-time :  3.290176391601562E-005
+           classical forces  ... done : cpu-time :  1.907348632812500E-005
+                  QM forces  ... done : cpu-time :  0.167469024658203     
+    176 -1.6874435082E+01 -1.68789321E+01  4.73115439E-03 (   332.0061 )
+  
+                              MD step : cpu-time :  0.167644977569580     
+  
+                    setup coordinates : cpu-time :  3.600120544433594E-005
+           classical forces  ... done : cpu-time :  1.883506774902344E-005
+                  QM forces  ... done : cpu-time :  0.161283016204834     
+    177 -1.6874434849E+01 -1.68788258E+01  4.15975467E-03 (   291.9085 )
+  
+                              MD step : cpu-time :  0.161464929580688     
+  
+                    setup coordinates : cpu-time :  4.100799560546875E-005
+           classical forces  ... done : cpu-time :  2.002716064453125E-005
+                  QM forces  ... done : cpu-time :  0.162142992019653     
+    178 -1.6874434990E+01 -1.68787739E+01  3.69918469E-03 (   259.5882 )
+  
+                              MD step : cpu-time :  0.162329912185669     
+  
+                    setup coordinates : cpu-time :  3.218650817871094E-005
+           classical forces  ... done : cpu-time :  1.883506774902344E-005
+                  QM forces  ... done : cpu-time :  0.160537958145142     
+    179 -1.6874435507E+01 -1.68787746E+01  3.34768643E-03 (   234.9220 )
+  
+                              MD step : cpu-time :  0.160727024078369     
+  
+                    setup coordinates : cpu-time :  3.504753112792969E-005
+           classical forces  ... done : cpu-time :  1.907348632812500E-005
+                  QM forces  ... done : cpu-time :  0.174021959304810     
+    180 -1.6874436326E+01 -1.68788202E+01  3.09279396E-03 (   217.0351 )
+  
+                              MD step : cpu-time :  0.174201965332031     
+  
+                    setup coordinates : cpu-time :  3.409385681152344E-005
+           classical forces  ... done : cpu-time :  2.288818359375000E-005
+                  QM forces  ... done : cpu-time :  0.163963079452515     
+    181 -1.6874437398E+01 -1.68788986E+01  2.91666819E-03 (   204.6756 )
+  
+                              MD step : cpu-time :  0.164133071899414     
+  
+                    setup coordinates : cpu-time :  3.290176391601562E-005
+           classical forces  ... done : cpu-time :  1.716613769531250E-005
+                  QM forces  ... done : cpu-time :  0.117102861404419     
+    182 -1.6874438362E+01 -1.68789957E+01  2.80018132E-03 (   196.5012 )
+  
+                              MD step : cpu-time :  0.117264986038208     
+  
+                    setup coordinates : cpu-time :  3.099441528320312E-005
+           classical forces  ... done : cpu-time :  1.597404479980469E-005
+                  QM forces  ... done : cpu-time :  0.115782022476196     
+    183 -1.6874439168E+01 -1.68790965E+01  2.72472778E-03 (   191.2063 )
+  
+                              MD step : cpu-time :  0.115951061248779     
+  
+                    setup coordinates : cpu-time :  3.385543823242188E-005
+           classical forces  ... done : cpu-time :  1.716613769531250E-005
+                  QM forces  ... done : cpu-time :  0.112658023834229     
+    184 -1.6874440008E+01 -1.68791870E+01  2.67390875E-03 (   187.6401 )
+  
+                              MD step : cpu-time :  0.112818956375122     
+  
+                    setup coordinates : cpu-time :  3.099441528320312E-005
+           classical forces  ... done : cpu-time :  1.907348632812500E-005
+                  QM forces  ... done : cpu-time :  0.111938953399658     
+    185 -1.6874440677E+01 -1.68792555E+01  2.63487942E-03 (   184.9012 )
+  
+                              MD step : cpu-time :  0.112097978591919     
+  
+                    setup coordinates : cpu-time :  3.099441528320312E-005
+           classical forces  ... done : cpu-time :  1.907348632812500E-005
+                  QM forces  ... done : cpu-time :  7.374095916748047E-002
+    186 -1.6874440887E+01 -1.68792928E+01  2.59847154E-03 (   182.3463 )
+  
+                              MD step : cpu-time :  7.390713691711426E-002
+  
+                    setup coordinates : cpu-time :  3.385543823242188E-005
+           classical forces  ... done : cpu-time :  1.907348632812500E-005
+                  QM forces  ... done : cpu-time :  0.118098974227905     
+    187 -1.6874440843E+01 -1.68792936E+01  2.55881143E-03 (   179.5632 )
+  
+                              MD step : cpu-time :  0.118263006210327     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  1.883506774902344E-005
+                  QM forces  ... done : cpu-time :  0.102534055709839     
+    188 -1.6874440755E+01 -1.68792561E+01  2.51374435E-03 (   176.4006 )
+  
+                              MD step : cpu-time :  0.102696895599365     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  1.811981201171875E-005
+                  QM forces  ... done : cpu-time :  0.120842933654785     
+    189 -1.6874440580E+01 -1.68791823E+01  2.46494074E-03 (   172.9758 )
+  
+                              MD step : cpu-time :  0.121010065078735     
+  
+                    setup coordinates : cpu-time :  3.099441528320312E-005
+           classical forces  ... done : cpu-time :  1.788139343261719E-005
+                  QM forces  ... done : cpu-time :  0.115818977355957     
+    190 -1.6874440174E+01 -1.68790773E+01  2.41744948E-03 (   169.6432 )
+  
+                              MD step : cpu-time :  0.115980863571167     
+  
+                    setup coordinates : cpu-time :  3.099441528320312E-005
+           classical forces  ... done : cpu-time :  1.597404479980469E-005
+                  QM forces  ... done : cpu-time :  0.115480184555054     
+    191 -1.6874439610E+01 -1.68789495E+01  2.37915735E-03 (   166.9560 )
+  
+                              MD step : cpu-time :  0.115646123886108     
+  
+                    setup coordinates : cpu-time :  3.099441528320312E-005
+           classical forces  ... done : cpu-time :  1.597404479980469E-005
+                  QM forces  ... done : cpu-time :  0.154038906097412     
+    192 -1.6874439004E+01 -1.68788093E+01  2.36066982E-03 (   165.6587 )
+  
+                              MD step : cpu-time :  0.154196977615356     
+  
+                    setup coordinates : cpu-time :  3.099441528320312E-005
+           classical forces  ... done : cpu-time :  2.002716064453125E-005
+                  QM forces  ... done : cpu-time :  0.115315914154053     
+    193 -1.6874438354E+01 -1.68786688E+01  2.37532345E-03 (   166.6870 )
+  
+                              MD step : cpu-time :  0.115476846694946     
+  
+                    setup coordinates : cpu-time :  3.218650817871094E-005
+           classical forces  ... done : cpu-time :  1.883506774902344E-005
+                  QM forces  ... done : cpu-time :  0.151479005813599     
+    194 -1.6874437614E+01 -1.68785409E+01  2.43887432E-03 (   171.1467 )
+  
+                              MD step : cpu-time :  0.151653051376343     
+  
+                    setup coordinates : cpu-time :  3.099441528320312E-005
+           classical forces  ... done : cpu-time :  1.716613769531250E-005
+                  QM forces  ... done : cpu-time :  0.148301839828491     
+    195 -1.6874437005E+01 -1.68784381E+01  2.56910394E-03 (   180.2854 )
+  
+                              MD step : cpu-time :  0.148466110229492     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  2.002716064453125E-005
+                  QM forces  ... done : cpu-time :  0.156426906585693     
+    196 -1.6874436681E+01 -1.68783724E+01  2.78568293E-03 (   195.4838 )
+  
+                              MD step : cpu-time :  0.156596899032593     
+  
+                    setup coordinates : cpu-time :  3.314018249511719E-005
+           classical forces  ... done : cpu-time :  1.692771911621094E-005
+                  QM forces  ... done : cpu-time :  0.144515037536621     
+    197 -1.6874436521E+01 -1.68783532E+01  3.10925647E-03 (   218.1903 )
+  
+                              MD step : cpu-time :  0.144680023193359     
+  
+                    setup coordinates : cpu-time :  3.314018249511719E-005
+           classical forces  ... done : cpu-time :  1.788139343261719E-005
+                  QM forces  ... done : cpu-time :  0.152075052261353     
+    198 -1.6874436594E+01 -1.68783870E+01  3.55878506E-03 (   249.7358 )
+  
+                              MD step : cpu-time :  0.152255058288574     
+  
+                    setup coordinates : cpu-time :  3.194808959960938E-005
+           classical forces  ... done : cpu-time :  1.597404479980469E-005
+                  QM forces  ... done : cpu-time :  0.148993968963623     
+    199 -1.6874436845E+01 -1.68784758E+01  4.14771959E-03 (   291.0639 )
+  
+                              MD step : cpu-time :  0.149152994155884     
+  
+                    setup coordinates : cpu-time :  3.099441528320312E-005
+           classical forces  ... done : cpu-time :  1.907348632812500E-005
+                  QM forces  ... done : cpu-time :  0.139912843704224     
+    200 -1.6874437178E+01 -1.68786163E+01  4.87730260E-03 (   342.2620 )
+  
+                              MD step : cpu-time :  0.140075922012329     
+ open file(in remd_svatoms): data/MD_Tocontinue
+ open file(in remd_svatoms): data/MD_mts0
+  dump data ... done  : cpu-time :  0.471717119216919     
+  
+  Program ending at 11:55:44.169 on 2021/06/24
+
+  total cpu-time ( sec )  :     29.719552
+

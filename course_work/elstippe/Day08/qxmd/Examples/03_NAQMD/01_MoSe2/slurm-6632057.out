@@ -1,0 +1,400 @@
+SLURM_JOBID=6632057
+SLURM_JOB_NODELIST=cpn-p27-24
+SLURM_NNODES=1
+SLURMTMPDIR=/scratch/6632057
+working directory=/panfs/panfs.cbls.ccr.buffalo.edu/scratch/grp-cyberwksp21/elstippe/qxmd/Examples/03_NAQMD/01_MoSe2
+ The Intel 18.4 compilers are in your path. This is adequate for compiling and
+running most codes. Source compilervars.sh for more features including the
+debugger. 
+ Intel-MPI is in your path. This is adequate for compiling and running most
+codes. Source the
+/util/academic/intel/18.4/compilers_and_libraries_2018.5.274/linux/mpi/intel64/bin/mpivars.sh
+file for more features. 
+NPROCS=8
+ Program starting at 12:17:20.291 on 2021/06/24
+ Starting--nodes =            8
+ open file(in get_nps): control/filename
+ open file(in get_nps): control/IN.PARAM-multi-core
+ QM / MD --nodes =            8           1
+     myid myid_md myid_qm myid_qm_un myid_kd myid_un myid_pw myid_lr
+       0       0       0       0          0       0       0       0
+       1               1       0          1       0       0       0
+       2               2       0          2       0       0       0
+       3               3       0          3       0       0       0
+       4               4       0          4       0       0       0
+       5               5       0          5       0       0       0
+       6               6       0          6       0       0       0
+       7               7       0          7       0       0       0
+ open file: control/filename
+ open file: control/IN.PARAM-multi-core
+ open file: control/CONFIG
+ open file: control/CONFIG
+           7  KB (           7  KB ), allocated (remd_param_atom_alloc)
+ open file: control/CONFIG
+ open file: control/CONFIG
+          93  B  (           7  KB ), allocated (remd_param_atom2_alloc)
+          64  B  (           7  KB ), allocated (remd_thermostat_alloc)
+          64  B  (           7  KB ), allocated (remd_atom_thermostat_alloc)
+  
+  ----      Ab initio MD calculation with PW method      ----
+  
+     lstart :     F          iogpsz :     1
+       ntmd :     2           ntype :     2       ntmd_clus :     0
+   ntmd_ist :     2
+    ntot(0) :    12           natom :    12        nmd_clus :     0
+     lmdout :     F          ioskip :     1      lrestrict_a:     F
+       ifmd :     3            dtmd :     50.00       nstop :    50
+    lmdstop :     F
+  nstep_ini :     0
+    ioptmze :     2            lpvv :     F
+ ioptmze_cel:    -1
+    liscale :     F          iscnum :    25          iscstp :    20
+   lmomzero :     F
+       treq :    300.00
+       nnos :     1           nresn :     1           nyosh :     1
+     tomega :   5500.00
+      lstat :     F         latomic :     F      nskip_atomi:     1
+    lstress :     F       nskip_stre:     5      nskp_strs_o:     0
+    ltotmom :     F       nskip_totm:     5
+      lsave :     T         lsreal8 :     T
+  rc_buffer :     0.0000
+  nmd_alloc :   119      nmd_buffer :     1
+  
+    h(MD) (L_1) :  1.24013268E+01  0.00000000E+00  0.00000000E+00
+          (L_2) : -6.20066340E+00  1.07398640E+01  0.00000000E+00
+          (L_3) :  1.90925368E-15  3.30692438E-15  3.11804788E+01
+    hcell (L_1) :  1.24013268E+01  0.00000000E+00  0.00000000E+00
+     (QM) (L_2) : -6.20066340E+00  1.07398640E+01  0.00000000E+00
+          (L_3) :  1.90925368E-15  3.30692438E-15  3.11804788E+01
+  
+ * MD atoms
+      zatom    watom            ntot icscale vrandom lfixion is2ist
+ 1:MO  42.0  9.59400E+01           4    1       T       F       1
+ 2:SE  34.0  7.89600E+01           8    1       T       F       2
+      ficmass ldispion dvector
+ 1:MO    1.00   F
+ 2:SE    1.00   F
+  (reduced species)
+ 1:MO  42.0
+ 2:SE  34.0
+  
+ * QM atoms
+      zatom    watom            ntot icscale lterminator
+ 1:MO  42.0  9.59400E+01           4    1       F
+ 2:SE  34.0  7.89600E+01           8    1       F
+  
+  read data (remd)   : cpu-time :  8.574008941650391E-003
+           3  KB (          11  KB ), allocated (remd_atom_alloc)
+         276  B  (          11  KB ), allocated (remd_qmmd_alloc)
+ open file: data/md_eng.d
+ open file: data/md_box.d
+ open file: data/md_cel.d
+
+  Center-of-mass(reduced unit) =   0.5205E+00  0.4797E+00  0.5000E+00
+  Momentum/atom(reduced unit)  =   0.1950E+02  0.7567E+01 -0.6972E+01
+  corrected total momentum  :    0.592119E-14   0.592119E-15  -0.355271E-14
+  initial temp.             :   207.3893
+ open file: control/filename
+ open file: control/IN.PARAM-multi-core
+ open file: control/CONFIG
+ open file: control/CONFIG
+           2  KB (          13  KB ), allocated (param_atom_alloc)
+         152  KB (         165  KB ), allocated (psvariables_alloc)
+ open file: control/CONFIG
+ open file: control/CONFIG
+ open file: control/NCPP/MO.PBE/MO_A.rvs
+ open file: control/NCPP/SE.PBE/SE_A.rvs
+          30  B  (         165  KB ), allocated (mxl_alloc)
+         185  KB (         350  KB ), allocated (psvariables_mxl_alloc)
+ *** Since ecutorth > ecut or zero, reset ecutorth =   40.0000000000000     
+ *** Since ecutc is zero, reset ecutc =   40.0000000000000     
+  
+  ---- Ab initio calculation for bulk by PW method ----
+  
+          <<< The standard pseudopotential method >>> 
+              with an empirical correction for vdW (DFT-D)
+              based on time-dependent density-functional theory (TDDFT) 
+              with fewest switching surface hopping (FSSH) 
+  
+     lclust :     F            jgga :     2          lstart :     F
+ ltddft_star:     F         dttddft :   0.02000  lfssh_switc:     T
+ lfssh_gsscf:     T      lfssh_gsfrc:     F
+ imxchg_fssh:     1       aslh_fssh :   0.80000   bslh_fssh :   0.13000
+ lfssh_rando:     F         tdbroad :      0.00  lfssh_paral:     F
+ rseed_fssh :   1936654408.00000     
+ lfssh_boltz:     T      lfssh_vscal:     F        tminimum :      0.00
+ ltddft_nscf:     T
+  electrons :    72           ntype :     2
+     iscfmx :   100          itrial :     0
+     tolpot : 3.0000E-08     tolres : 5.0000E-08   tolHF_KS : 5.0000E-09
+     lhcunt :     T          ihldam :     1          toleig : 1.0000E-10
+  roughfeig :   0.30000   roughfzan :   0.30000
+     itermx :     4         iteremx :     4         kstrial :     0
+   methodcg :     2         threinn : 0.0000E+00    wdinner : 9.0000E-01
+     imxchg :     1            aslh :   0.80000        bslh :   0.64000
+ imxchg_tria:     0      aslh_trial :   0.10000  bslh_trial :   0.64000
+     itratn :    10         cmetric :  20.00000
+    louteig :     F      loutenergy :     F       loutzansa :     F
+    loutlog :     F
+     nstabi :    10          xstabi : 1.0000E+01
+       nd2v :     6           multg :     1           tolcg : 1.0000E-11
+     weigrd :   0.40000      iblock :     26041
+      lsave :     T         lsreal8 :     T
+    lmulken :     F        nskpmulk :     5       ldecmpovp :     F
+   lspdatom :     F        lpmchgat :     F      lmdecmpdos :     F
+    lsphexp :     F      nskpsphexp :     5       radsphexp :   0.00000
+       leda :     F         nskpeda :     5         radgeda :  10.00000
+   lwannier :     F          iwbnd1 :     0          iwbnd2 :     0
+    iterwan :   200          tolwan : 1.0000E-06
+   nskpwann :     5          iwstt1 :     1          iwstt2 :     0
+    loutuni :     F          natwan :     0
+   freqacmx :   1.00000
+    icband1 :     0         icband2 :     0
+   ichband1 :     0        ichband2 :     0
+   iceband1 :     0        iceband2 :     0
+  immtband1 :     0       immtband2 :     0
+    lstress :     T       nskip_stre:     1          lshdep :     F
+    lintchg :     F       nskip_intc:     5
+     ldpchg :     F       nskip_dpch:     5
+     ldpwav :     T       nskip_dpwa:    11
+    wv_xmin :      1.00     wv_xmax :      0.00     wv_ymin :      1.00
+    wv_ymax :      0.00     wv_zmin :      1.00     wv_zmax :      0.00
+ lcompress_d:     T      ndigit_dpwa:     3
+     ibstt1 :    36          ibstt2 :    37
+     ldppot :     F       nskip_dppo:     5       nav_dppot :     1
+     lhoteh :     F      nskip_hoteh:     5
+       ecut :     40.00    ecutdens :    160.00    ecutsoft :    160.00
+   ecutorth :     40.00       ecutc :     40.00
+    lvshape :     T         pwscale :   1.20000
+      nkpnt :     1          lgamma :     T          ltetra :     F
+   lksgamma :     F
+      nband :    48          noband :    40       cf. nel/2 :    36
+     lfermi :     3          tfermi :    500.00       ncion :     0
+     lplcom :     F
+      lkbpp :     T           lvand :     F           lvfull:     F
+      llocl :     F           lpcc  :     T
+    lnlpp_r :     T        llclpp_r :     F          lpcc_r :     T
+    lnlpp_g :     F        llclpp_g :     T          lpcc_g :     F
+    lkbpp_r :     T         lkbpp_g :     F
+    lvand_r :     F         lvand_g :     F
+      lspin :     F
+  
+    hcell (L_1) :  1.24013268E+01  0.00000000E+00  0.00000000E+00
+          (L_2) : -6.20066340E+00  1.07398640E+01  0.00000000E+00
+          (L_3) :  1.90925368E-15  3.30692438E-15  3.11804788E+01
+           nd1v :   49   49  125
+         nd1vks :   49   49  125
+  
+  Occupation changes in TDDFT (only available when ltddft_start=.false.)
+   nocc_change :            4
+   numband        occ_new
+      35           2.0000
+      36           1.0000
+      37           1.0000
+      38           0.0000
+  
+      zatom   zv   watom  covrad  nhk lmax local lkbppi lvandi lvflag llocli
+ 1:MO  42.0  6.0  95.9400  2.438    4   2    0      T      F      F      F
+ 2:SE  34.0  6.0  78.9600  2.211    8   2    0      T      F      F      F
+
+      lking  rking  gkgmax  gkgexct
+      llking rlking glkgmax glkgexct     rctflc
+      lpking rpking gpkgmax gpkgexct lpcci rpcc  rint icscale vrandom
+ 1:MO   T    1.500   1.250   0.800
+        F    1.500   1.150   0.800         9.50
+        T    1.500   1.150   0.800     T   2.00  0.00    1       T
+ 2:SE   T    1.500   1.250   0.500
+        F    1.500   1.150   0.800         9.50
+        T    1.100   1.150   0.800     T   1.80  0.00    1       T
+  
+  it=           1
+  nhk1, nhk2=           1           4
+  coordinates
+    1  0.16656600  0.33324400  0.24999500
+    2  0.66687500  0.33341100  0.25000000
+    3  0.16650700  0.83328300  0.25001200
+    4  0.66669200  0.83342100  0.24999600
+  velocities
+    1  0.00000000  0.00000000  0.00000000
+    2  0.00000000  0.00000000  0.00000000
+    3  0.00000000  0.00000000  0.00000000
+    4  0.00000000  0.00000000  0.00000000
+  it=           2
+  nhk1, nhk2=           5          12
+  coordinates
+    5  0.33377700  0.16694500  0.14695000
+    6  0.83303400  0.16649900  0.14687200
+    7  0.33348700  0.66678100  0.14695800
+    8  0.83312500  0.66648000  0.14690300
+    9  0.33374200  0.16692700  0.35305700
+   10  0.83311200  0.16654400  0.35312200
+   11  0.33346900  0.66675100  0.35303400
+   12  0.83291300  0.66635400  0.35310200
+  velocities
+    5  0.00000000  0.00000000  0.00000000
+    6  0.00000000  0.00000000  0.00000000
+    7  0.00000000  0.00000000  0.00000000
+    8  0.00000000  0.00000000  0.00000000
+    9  0.00000000  0.00000000  0.00000000
+   10  0.00000000  0.00000000  0.00000000
+   11  0.00000000  0.00000000  0.00000000
+   12  0.00000000  0.00000000  0.00000000
+  read input data    : cpu-time :  5.342507362365723E-002
+         983  KB (           1  MB ), allocated (pwlda_pp_alloc)
+         524  KB (           2  MB ), allocated (pcc_variables_alloc)
+          13  MB, allocated (strvec)
+           6  MB (           8  MB ), allocated (set_rciprl)
+          48  B  (           8  MB ), allocated (nplw3_alloc)
+
+ supercell for the plane wave method
+     a  = (  1.24013E+01,  0.00000E+00,  0.00000E+00)
+     b  = ( -6.20066E+00,  1.07399E+01,  0.00000E+00)
+     c  = (  1.90925E-15,  3.30692E-15,  3.11805E+01)
+
+ unit reciprocal cell
+     a* = (  5.06654E-01,  2.92517E-01, -6.20473E-17)
+     b* = (  0.00000E+00,  5.85034E-01, -6.20473E-17)
+     c* = (  0.00000E+00,  0.00000E+00,  2.01510E-01)
+
+ energy cut off
+      ecut(w.f.)=  4.00000000E+01    ecut(c.d.) =  1.60000000E+02
+      ecut(soft)=  1.60000000E+02    ecut(orth) =  4.00000000E+01
+      kmax1 =  12, kmax2 =  12, kmax3 =  31,   nplw =   8851
+      kmax1s=  24, kmax2s=  24, kmax3s=  62,   nplw2=  70871
+      kmax1d=  24, kmax2d=  24, kmax3d=  62,   nplw5=  70871
+                                               nplwc=   8851
+                                               nplw7=   8851
+ fft descreated mesh
+      kfft1 =  49, kfft2 =  49, kfft3 = 125,   kfft0 =   300125
+      kfft1d=  49, kfft2d=  49, kfft3d= 125,   kfft0d=   300125
+
+  set reciprocal vectors : cpu-time :  5.025291442871094E-002
+           8  B  (           8  MB ), allocated (
+ planewave_decomp_variables_alloc)
+           3  KB (           8  MB ), allocated (nlpp_variables_alloc(2))
+           2  MB (           9  MB ), allocated (nlppr_variables_alloc)
+         767  KB, allocated (rdtmpp)
+ open file: control/NCPP/MO.PBE/MO_S1.rvs
+ open file: control/NCPP/MO.PBE/MO_P3.rvs
+ open file: control/NCPP/MO.PBE/MO_D5.rvs
+ open file: control/NCPP/MO.PBE/MO_val
+ open file: control/NCPP/SE.PBE/SE_S1.rvs
+ open file: control/NCPP/SE.PBE/SE_P3.rvs
+ open file: control/NCPP/SE.PBE/SE_D5.rvs
+ open file: control/NCPP/SE.PBE/SE_val
+         767  KB, deallocated (rdtmpp)
+           4  MB (          13  MB ), allocated (lopp_variables_alloc)
+       16016  B, allocated (lotmpp_g)
+         714  KB, allocated (nlkbpp)
+ open file: control/NCPP/MO.PBE/MO_P3.nwp
+ open file: control/NCPP/MO.PBE/MO_D5.nwp
+ open file: control/NCPP/SE.PBE/SE_P3.nwp
+ open file: control/NCPP/SE.PBE/SE_D5.nwp
+         714  KB, deallocated (nlkbpp)
+         512  B  (          13  MB ), allocated (pwlda_proc_alloc)
+         432  B  (          13  MB ), allocated (pwlda_iod_alloc)
+           3  KB (          13  MB ), allocated (pwlda_atom_alloc)
+         864  B  (          13  MB ), allocated (nlkbppr_variables_alloc)
+           3  KB (          13  MB ), allocated (force_nlc_alloc)
+           5  KB (          13  MB ), allocated (nlkbpp_variables_alloc)
+           8  B  (          13  MB ), allocated (iatmpt_nod_alloc)
+          10  MB (          24  MB ), allocated (pwlda_alloc)
+          43  MB (          67  MB ), allocated (pwlda_alloc(2))
+           2  KB (          67  MB ), allocated (fermi_alloc)
+           3  KB (          67  MB ), allocated (mxchgg_alloc)
+           3  MB (          70  MB ), allocated (mxchgg_alloc(2))
+           1  MB (          72  MB ), allocated (tddft_fssh_pw_alloc)
+           1  MB (          73  MB ), allocated (tddft_fssh_pw_alloc (2))
+           5  KB (          73  MB ), allocated (slmir_alloc)
+           7  KB (          73  MB ), allocated (slmir_atm_alloc)
+         155  KB (          73  MB ), allocated (tddft_fssh_alloc)
+ open file: data/qm_eig.d
+ open file: data/qm_ion.d
+ open file: data/qm_eng.d
+ open file: data/qm_zan.d
+ open file: data/qm_box.d
+ open file: data/qm_cel.d
+ open file: data/qm_frc.d
+ open file: data/qm_fer.d
+ open file: data/qm_str.d
+ open file: data/qm_td_eig.d
+ Parameters for DFT-D
+  it=           1  c6,R0=   641.856805369020        3.09726089528086     
+  it=           2  c6,R0=   328.863802994098        3.34670472577327     
+         384  B  (          73  MB ), allocated (setdftd)
+  set parameters     : cpu-time :  0.563167095184326     
+          16  B  (          73  MB ), allocated (pwlda_grid_alloc)
+           4  KB (          73  MB ), allocated (pwlda_mgrid_alloc)
+          15  MB (          88  MB ), allocated (pwlda_mgrid_alloc(2))
+           7  MB (          95  MB ), allocated (cfftmsh_alloc)
+  No. of global FD meshes :      300125
+  set mesh points (FD->FFT) : cpu-time :  3.422975540161133E-003
+  set mesh points    : cpu-time :  1.280212402343750E-002
+  initial wave functions
+  initial wave functions by random numbers
+                    set wavefunctions : cpu-time :  2.543187141418457E-002
+  initial electron density
+  Initial density is calculated from atomic charge density.
+         131  KB, allocated (denini)
+         131  KB, deallocated (denini)
+  No. of electrons (2) =   69.3293386837610       0.000000000000000E+000
+  error in chknel: No. of electrons =   69.3293386837610     
+                     : cpu-time :  3.196501731872559E-002
+  unify chg. density : cpu-time :  1.266956329345703E-003
+     c.d.tr.(r to g) : cpu-time :  1.242518424987793E-002
+     c.d.tr.(g to r) : cpu-time :  1.177787780761719E-002
+  No. of electrons :   71.9999999999999     
+  No. of electrons (2) =   72.0000000000000      -3.558361184790909E-003
+      set c.d. total : cpu-time :  5.970406532287598E-002
+    Ewald:   rccc   5.10143542350080     
+    Ewald:   lhfull F
+    Ewald:   ALP     4.39534190491929     
+    Ewald:   gamma  0.861589246954152     
+    Ewald:   DKMAX2   1.09769700035954     
+    Ewald:   KMAXM          32
+           1  MB, allocated (clmrcp)
+    Ewald:   num =       23692
+    Ewald:   numk2 =        9983
+           1  MB (          96  MB ), allocated (clmrcp)
+    Ewald:   KCSMAX1,2,3          12          12          32
+           3  KB (          96  MB ), allocated (clmrcp(2))
+  initialize Ewald   : cpu-time :  7.584095001220703E-003
+          51  KB (          96  MB ), allocated (struc_atoms_alloc(2))
+  initialize g-space and/or USPP calc. : cpu-time :  2.768039703369141E-004
+                all to all (bd-to-gd) : cpu-time :  6.639957427978516E-004
+  Gram-Schmidt       
+                         set S-matrix : cpu-time :  2.076148986816406E-003
+                     Cholesky decomp. :          :  4.601478576660156E-005
+                             updating :          :  1.155853271484375E-003
+                                total : cpu-time :  3.278017044067383E-003
+  setup data ... done : cpu-time :  0.870342016220093     
+ myid=           0  error in check_param_in_qm           0          50
+           3           0          50           0
+ myid=           1  error in check_param_in_qm           0          50
+           3           0          50           0
+ myid=           3  error in check_param_in_qm           0          50
+           3           0          50           0
+ myid=           4  error in check_param_in_qm           0          50
+           3           0          50           0
+ myid=           5  error in check_param_in_qm           0          50
+           3           0          50           0
+ myid=           6  error in check_param_in_qm           0          50
+           3           0          50           0
+ myid=           7  error in check_param_in_qm           0          50
+           3           0          50           0
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+ myid=           2  error in check_param_in_qm           0          50
+           3           0          50           0
+ error in setting parameters:         100
+ 
+application called MPI_Abort(MPI_COMM_WORLD, 0) - process 6
+application called MPI_Abort(MPI_COMM_WORLD, 0) - process 7
+application called MPI_Abort(MPI_COMM_WORLD, 0) - process 1
+application called MPI_Abort(MPI_COMM_WORLD, 0) - process 3
+application called MPI_Abort(MPI_COMM_WORLD, 0) - process 4
+application called MPI_Abort(MPI_COMM_WORLD, 0) - process 5
+application called MPI_Abort(MPI_COMM_WORLD, 0) - process 2
+application called MPI_Abort(MPI_COMM_WORLD, 0) - process 0
+slurmstepd: error: *** STEP 6632057.1 ON cpn-p27-24 CANCELLED AT 2021-06-24T12:17:21 ***
+srun: error: cpn-p27-24: tasks 0-7: Killed
+srun: launch/slurm: _step_signal: Terminating StepId=6632057.1

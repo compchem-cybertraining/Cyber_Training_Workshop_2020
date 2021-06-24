@@ -1,0 +1,301 @@
+ Program starting at 11:36:10.310 on 2021/06/24
+ Starting--nodes =            1
+ open file(in get_nps): control/filename
+ open file(in get_nps): control/IN.PARAM
+ QM / MD --nodes =            1           1
+     myid myid_md myid_qm myid_qm_un myid_kd myid_un myid_pw myid_lr
+       0       0       0       0          0       0       0       0
+ open file: control/filename
+ open file: control/IN.PARAM
+ open file: control/CONFIG
+ open file: control/CONFIG
+           6  KB (           6  KB ), allocated (remd_param_atom_alloc)
+ open file: control/CONFIG
+ open file: control/CONFIG
+          93  B  (           6  KB ), allocated (remd_param_atom2_alloc)
+          64  B  (           6  KB ), allocated (remd_thermostat_alloc)
+          64  B  (           6  KB ), allocated (remd_atom_thermostat_alloc)
+  
+  ----      Ab initio MD calculation with PW method      ----
+  
+     lstart :     F          iogpsz :     1
+       ntmd :     2           ntype :     2       ntmd_clus :     0
+   ntmd_ist :     2
+    ntot(0) :     3           natom :     3        nmd_clus :     0
+     lmdout :     T          ioskip :     1      lrestrict_a:     F
+     locoor :     T          lovelo :     T          loforc :     T
+ ioskipcoor :     1      ioskipvelo :     1      ioskipforc :     1
+       ifmd :     1            dtmd :      0.10       nstop :   100
+    lmdstop :     F
+  nstep_ini :     0
+    ioptmze :     2            lpvv :     F
+   dist_max :   0.50000
+ ibfgsclear :     0         qnstabi : 0.0000E+00   gammamin : 1.0000E-01
+ ioptmze_cel:    -1
+    liscale :     F          iscnum :    25          iscstp :    20
+   lmomzero :     F
+       treq :    300.00
+      lstat :     F         latomic :     F      nskip_atomi:     1
+ tol_energy : 1.0000E-07  tol_force : 5.0000E-04
+    lstress :     F       nskip_stre:     5      nskp_strs_o:     0
+    ltotmom :     F       nskip_totm:     5
+      lsave :     T         lsreal8 :     T
+  rc_buffer :     0.0000
+  nmd_alloc :   105      nmd_buffer :     1
+  
+    h(MD) (L_1) :  1.32280819E+01  0.00000000E+00  0.00000000E+00
+          (L_2) :  8.09986409E-16  1.32280819E+01  0.00000000E+00
+          (L_3) :  8.09986409E-16  8.09986409E-16  1.32280819E+01
+    hcell (L_1) :  1.32280819E+01  0.00000000E+00  0.00000000E+00
+     (QM) (L_2) :  8.09986409E-16  1.32280819E+01  0.00000000E+00
+          (L_3) :  8.09986409E-16  8.09986409E-16  1.32280819E+01
+  
+ * MD atoms
+      zatom    watom            ntot icscale vrandom lfixion is2ist
+ 1:O    8.0  1.59994E+01           1    1       T       F       1
+ 2:H    1.0  1.00794E+00           2    1       T       F       2
+      ficmass ldispion dvector
+ 1:O     1.00   F
+ 2:H     1.00   F
+  (reduced species)
+ 1:O    8.0
+ 2:H    1.0
+  
+ * QM atoms
+      zatom    watom            ntot icscale lterminator
+ 1:O    8.0  1.59994E+01           1    1       F
+ 2:H    1.0  1.00794E+00           2    1       F
+  
+  read data (remd)   : cpu-time :  0.000000000000000E+000
+           8  KB (          14  KB ), allocated (remd_atom_alloc)
+         204  B  (          14  KB ), allocated (remd_qmmd_alloc)
+ open file: data/md_eng.d
+ open file: data/md_box.d
+ open file: data/md_cel.d
+ open file: data/md_spc.d
+ open file: data/md_ion.d
+ open file: data/md_frc.d
+  setup data ... done : cpu-time :  0.225560004124418     
+  
+                    setup coordinates : cpu-time :  1.101195812225342E-005
+           classical forces  ... done : cpu-time :  4.999339580535889E-005
+                  QM forces  ... done : cpu-time :   2.34217688441277     
+      0 -1.6614295635E+01
+        7.7719456321E-01
+  
+                              MD step : cpu-time :   2.34291595220566     
+  
+                    setup coordinates : cpu-time :  8.296966552734375E-005
+           classical forces  ... done : cpu-time :  2.002716064453125E-005
+                  QM forces  ... done : cpu-time :   1.29605793952942     
+      1 -1.6732809149E+01
+        4.8151458134E-01
+  
+                              MD step : cpu-time :   1.29626107215881     
+ The status of eigenvalue problem: OK   
+ The lowest three eigenvalues of Hessian
+           1  0.999629287903073     
+           2  0.999999999999999     
+           3   1.00000000000000     
+  gamma =  0.500420854368453     
+ The Newton-Raphson step for the lowest three eigenvalues
+           1  1.641561102415380E-002
+           2  3.921167819883294E-016
+           3  1.346938622325864E-014
+  
+                    setup coordinates : cpu-time :  1.449584960937500E-004
+           classical forces  ... done : cpu-time :  2.002716064453125E-005
+                  QM forces  ... done : cpu-time :   1.42065000534058     
+      2 -1.6825442533E+01
+        2.2568772133E-01
+  
+                              MD step : cpu-time :   1.42092609405518     
+ The status of eigenvalue problem: OK   
+ The lowest three eigenvalues of Hessian
+           1  0.999999973810158     
+           2   1.00000000000000     
+           3   1.00000000000000     
+  gamma =  0.499999993806519     
+ The Newton-Raphson step for the lowest three eigenvalues
+           1 -5.538327099245518E-005
+           2  1.640211959423149E-014
+           3 -3.456927225902580E-015
+  
+                    setup coordinates : cpu-time :  1.239776611328125E-004
+           classical forces  ... done : cpu-time :  1.811981201171875E-005
+                  QM forces  ... done : cpu-time :   1.30347585678101     
+      3 -1.6859567810E+01
+        1.0239027887E-01
+  
+                              MD step : cpu-time :   1.30371475219727     
+ The status of eigenvalue problem: OK   
+ The lowest three eigenvalues of Hessian
+           1  0.967468739120194     
+           2  0.999999999999999     
+           3  0.999999999999999     
+  gamma =  0.489008535875674     
+ The Newton-Raphson step for the lowest three eigenvalues
+           1  4.917815523733202E-002
+           2 -1.326142713624304E-013
+           3  2.486459252625559E-013
+  
+                    setup coordinates : cpu-time :  1.239776611328125E-004
+           classical forces  ... done : cpu-time :  1.907348632812500E-005
+                  QM forces  ... done : cpu-time :   1.00227594375610     
+      4 -1.6871703574E+01
+        5.1720468954E-02
+  
+                              MD step : cpu-time :   1.00241899490356     
+ The status of eigenvalue problem: OK   
+ The lowest three eigenvalues of Hessian
+           1  0.748026328761912     
+           2   1.00000000000000     
+           3   1.00000000000000     
+  gamma =  0.380387218935657     
+ The Newton-Raphson step for the lowest three eigenvalues
+           1 -6.145264025386830E-002
+           2  8.593414899425559E-013
+           3  1.911121448351668E-013
+  
+                    setup coordinates : cpu-time :  0.000000000000000E+000
+           classical forces  ... done : cpu-time :  0.000000000000000E+000
+                  QM forces  ... done : cpu-time :   1.15976953506470     
+      5 -1.6875493111E+01
+        2.7518102988E-02
+  
+                              MD step : cpu-time :   1.15987157821655     
+ The status of eigenvalue problem: OK   
+ The lowest three eigenvalues of Hessian
+           1  0.488886229743270     
+           2   1.00000000000000     
+           3   1.00000000000000     
+  gamma =  0.247516868030577     
+ The Newton-Raphson step for the lowest three eigenvalues
+           1  5.280606137689559E-002
+           2  5.496016022797755E-011
+           3  4.193632506161016E-011
+  
+                    setup coordinates : cpu-time :  1.325607299804688E-004
+           classical forces  ... done : cpu-time :  3.147125244140625E-005
+                  QM forces  ... done : cpu-time :  0.705112457275391     
+      6 -1.6877067932E+01
+        1.6158805409E-02
+  
+                              MD step : cpu-time :  0.705374717712402     
+ The status of eigenvalue problem: OK   
+ The lowest three eigenvalues of Hessian
+           1  0.281126110647954     
+           2   1.00000000000000     
+           3   1.00000000000000     
+  gamma =  0.142499231529434     
+ The Newton-Raphson step for the lowest three eigenvalues
+           1  5.526262524085637E-002
+           2 -3.749274028734114E-012
+           3  9.846027604208126E-011
+  
+                    setup coordinates : cpu-time :  1.316070556640625E-004
+           classical forces  ... done : cpu-time :  2.670288085937500E-005
+                  QM forces  ... done : cpu-time :  0.944042205810547     
+      7 -1.6878123815E+01
+        1.7584687009E-02
+  
+                              MD step : cpu-time :  0.944298744201660     
+ The status of eigenvalue problem: OK   
+ The lowest three eigenvalues of Hessian
+           1  0.179626384727474     
+           2   1.00000000000000     
+           3   1.00000000000000     
+  gamma =  9.108925665587830E-002  ->  0.100000000000000     
+ The Newton-Raphson step for the lowest three eigenvalues
+           1 -5.433508532753008E-002
+           2 -5.168895191594089E-013
+           3  1.050306789932694E-010
+  
+                    setup coordinates : cpu-time :  1.306533813476562E-004
+           classical forces  ... done : cpu-time :  2.098083496093750E-005
+                  QM forces  ... done : cpu-time :  0.907364845275879     
+      8 -1.6878856974E+01
+        1.5069676599E-02
+  
+                              MD step : cpu-time :  0.907608985900879     
+ The status of eigenvalue problem: OK   
+ The lowest three eigenvalues of Hessian
+           1  0.151757216258967     
+           2   1.00000000000000     
+           3   1.00000000000000     
+  gamma =  7.645615090025723E-002  ->  0.100000000000000     
+ The Newton-Raphson step for the lowest three eigenvalues
+           1  3.725715196056281E-002
+           2 -4.902792459808890E-012
+           3  3.646577557426380E-013
+  
+                    setup coordinates : cpu-time :  0.000000000000000E+000
+           classical forces  ... done : cpu-time :  0.000000000000000E+000
+                  QM forces  ... done : cpu-time :   1.06903457641602     
+      9 -1.6879213685E+01
+        8.2799040623E-03
+  
+                              MD step : cpu-time :   1.06914424896240     
+ The status of eigenvalue problem: OK   
+ The lowest three eigenvalues of Hessian
+           1  0.162827751040296     
+           2  0.999999999761670     
+           3  0.999999999999999     
+  gamma =  8.155756357313027E-002  ->  0.100000000000000     
+ The Newton-Raphson step for the lowest three eigenvalues
+           1  1.841174118488080E-002
+           2 -1.191060093542195E-006
+           3  3.997559646055393E-012
+  
+                    setup coordinates : cpu-time :  1.239776611328125E-004
+           classical forces  ... done : cpu-time :  2.002716064453125E-005
+                  QM forces  ... done : cpu-time :   1.04618549346924     
+     10 -1.6879313888E+01
+        2.5071344840E-03
+  
+                              MD step : cpu-time :   1.04643154144287     
+ The status of eigenvalue problem: OK   
+ The lowest three eigenvalues of Hessian
+           1  0.182898877904545     
+           2  0.999999821580795     
+           3   1.00000000000000     
+  gamma =  9.146502460112289E-002  ->  0.100000000000000     
+ The Newton-Raphson step for the lowest three eigenvalues
+           1  5.968363181840756E-003
+           2  1.891644891027615E-005
+           3 -2.144313920322026E-014
+  
+                    setup coordinates : cpu-time :  1.316070556640625E-004
+           classical forces  ... done : cpu-time :  2.002716064453125E-005
+                  QM forces  ... done : cpu-time :  0.815347671508789     
+     11 -1.6879325036E+01
+        8.1307923271E-04
+  
+                              MD step : cpu-time :  0.815610885620117     
+ The status of eigenvalue problem: OK   
+ The lowest three eigenvalues of Hessian
+           1  0.165704471321744     
+           2  0.916179004520701     
+           3   1.00000000000000     
+  gamma =  8.285616515624641E-002  ->  0.100000000000000     
+ The Newton-Raphson step for the lowest three eigenvalues
+           1  3.036979015805168E-003
+           2  6.122769540738134E-004
+           3 -1.844563178485629E-012
+  
+                    setup coordinates : cpu-time :  1.373291015625000E-004
+           classical forces  ... done : cpu-time :  2.098083496093750E-005
+                  QM forces  ... done : cpu-time :  0.903276443481445     
+  *** CG minimization complete
+      energy convergence = -1.681387384877553E-006
+      force  convergence =  2.401991259429728E-004
+  
+                              MD step : cpu-time :  0.903484344482422     
+ open file(in remd_svatoms): data/MD_Tocontinue
+ open file(in remd_svatoms): data/MD_mts0
+  dump data ... done  : cpu-time :  5.355834960937500E-003
+  
+  Program ending at 11:36:26.376 on 2021/06/24
+
+  total cpu-time ( sec )  :     15.149315
+
