@@ -1,0 +1,119 @@
+ 
+ |^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^|
+ | MD execution started at    Sun Jun 27 08:09:08 EDT 2021   |
+ | Computer:  Linux srv-p22-13.cbls.ccr.buffalo.e |
+ |________________________________________________|
+ 
+ rnd_seed=       19345
+ !!!!!!-----MD INPUT-----!!!!!!
+ 
+ Ground state MD,      imdtype=           0
+ Initial count for out files              0
+ MD using Langevin 
+ Starting time, fs          0.000000000000000E+000
+ Time step, fs                        0.100000000000000     
+ Number of classical steps (CS)            0
+ Quantum steps/per CS                    4
+ Displacement for deriv. [A]     1.000000000000000E-003
+ Langevin thermostat dynamics, therm_type=           1
+ Temperature, K                  300.000000000000     
+ Bath relaxation constant       0.400000000000000     
+ Equilibrated dynamics
+ Number of steps per degree K           100
+ Number of steps to write data            1
+ Number of steps to write coords          10
+ Friction coefficient [1/ps]      20.0000000000000     
+ Seed for random generator           19345
+ NAESMD verbosity,            2
+ MD will use analytic deriv,  ideriv=           1
+ Cartesian coordinates are used
+ Allocating initial naesmd_module variables
+ Allocating md_module initial variables
+ Allocating variables
+ Allocating naesmd_module variables          12           0
+ Allocating md_module variables          12
+  Finish reading coordinates 
+ Rescaling velocity
+ 
+ Initial Geometry
+    6        -7.979827    0.677692   -0.053229
+    6        -7.084993    1.760260    0.029496
+    6        -5.705842    1.549036    0.031276
+    6        -5.223142    0.219533   -0.044604
+    6        -6.105096   -0.868556    0.022087
+    6        -7.534410   -0.644449    0.024813
+    1        -9.026808    0.858772   -0.079479
+    1        -7.477461    2.756635    0.163539
+    1        -5.093934    2.447989    0.148188
+    1        -4.129202    0.099937   -0.158081
+    1        -5.691699   -1.887856    0.115109
+    1        -8.283839   -1.431380    0.105193
+
+--------------------------------------------------------------------------------
+  QM CALCULATION INFO
+--------------------------------------------------------------------------------
+
+| QMMM: Citation for AMBER QMMM Run:
+| QMMM: R.C. Walker, M.F. Crowley and D.A. Case, J. COMP. CHEM. 29:1019, 2008
+
+QMMM: SINGLET STATE CALCULATION
+QMMM: RHF CALCULATION, NO. OF DOUBLY OCCUPIED LEVELS = 15
+
+| QMMM: *** Selected Hamiltonian *** 
+| QMMM: AM1         
+
+| QMMM: *** Parameter sets in use ***
+| QMMM: C : M.J.S.DEWAR et al. JACS, 107, 3902, (1985)
+| QMMM: H : M.J.S.DEWAR et al. JACS, 107, 3902, (1985)
+
+| QMMM: *** SCF convergence criteria ***
+| QMMM: Energy change                :  0.2D-06 kcal/mol
+| QMMM: Error matrix |FP-PF|         :  0.1D+00 au
+| QMMM: Density matrix change        :  0.2D-04
+| QMMM: Maximum number of SCF cycles :      300
+ 
+| QMMM: *** Diagonalization Routine Information ***
+| QMMM: Pseudo diagonalizations are allowed.
+| QMMM: Auto diagonalization routine selection is disabled.
+| QMMM: Using internal diagonalization routine (diag_routine=1).
+
+  QMMM: QM Region Cartesian Coordinates (*=link atom) 
+  QMMM: QM_NO.   MM_NO.  ATOM         X         Y         Z
+  QMMM:     1        1      C       -7.9798    0.6777   -0.0532
+  QMMM:     2        2      C       -7.0850    1.7603    0.0295
+  QMMM:     3        3      C       -5.7058    1.5490    0.0313
+  QMMM:     4        4      C       -5.2231    0.2195   -0.0446
+  QMMM:     5        5      C       -6.1051   -0.8686    0.0221
+  QMMM:     6        6      C       -7.5344   -0.6444    0.0248
+  QMMM:     7        7      H       -9.0268    0.8588   -0.0795
+  QMMM:     8        8      H       -7.4775    2.7566    0.1635
+  QMMM:     9        9      H       -5.0939    2.4480    0.1482
+  QMMM:    10       10      H       -4.1292    0.0999   -0.1581
+  QMMM:    11       11      H       -5.6917   -1.8879    0.1151
+  QMMM:    12       12      H       -8.2838   -1.4314    0.1052
+
+--------------------------------------------------------------------------------
+  RESULTS
+--------------------------------------------------------------------------------
+
+QMMM: SCF Converged to 0.2306E-06 in:    16 Cycles 
+QMMM:
+QMMM: SCF Energy =       28.09453465 KCal/mol,       117.54753299 KJ/mol
+QMMM: SCF Energy = Heat of formation
+ LPRINT:           2           0
+ 
+ |^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^|
+ | MD normal termination at   Sun Jun 27 08:09:08 EDT 2021   |
+ | MD total CPU time          0.10000E-01 seconds |
+ |      0 days  0 hours  0 minutes  0 seconds     |
+ 
+  SQM (ground sim%naesmd%state) took overall [s]:
+       0.465E-02
+  Davidson (excited states) took overall [s]:
+        0.00    
+  deriv (adiabatic forces) took overall [s]:
+       0.196E-02
+  nacT (NA derivatives) took overall [s]:
+        0.00    
+ |________________________________________________|
+ 

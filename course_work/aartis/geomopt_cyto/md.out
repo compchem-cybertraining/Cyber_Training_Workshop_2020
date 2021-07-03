@@ -1,0 +1,218 @@
+ 
+ |^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^|
+ | MD execution started at    Sun Jun 27 09:05:21 EDT 2021   |
+ | Computer:  Linux srv-p22-13.cbls.ccr.buffalo.e |
+ |________________________________________________|
+ 
+ rnd_seed=       19345
+ !!!!!!-----MD INPUT-----!!!!!!
+ 
+ Ground state MD,      imdtype=           0
+ Initial count for out files              0
+ MD using Langevin 
+ Starting time, fs          0.000000000000000E+000
+ Time step, fs                        0.100000000000000     
+ Number of classical steps (CS)            0
+ Quantum steps/per CS                    4
+ Displacement for deriv. [A]     1.000000000000000E-003
+ Langevin thermostat dynamics, therm_type=           1
+ Temperature, K                  300.000000000000     
+ Bath relaxation constant       0.400000000000000     
+ Equilibrated dynamics
+ Number of steps per degree K           100
+ Number of steps to write data            1
+ Number of steps to write coords          10
+ Friction coefficient [1/ps]      20.0000000000000     
+ Seed for random generator           19345
+ NAESMD verbosity,            2
+ MD will use analytic deriv,  ideriv=           1
+ Cartesian coordinates are used
+ Allocating initial naesmd_module variables
+ Allocating md_module initial variables
+ Allocating variables
+ Allocating naesmd_module variables          13           0
+ Allocating md_module variables          13
+  Finish reading coordinates 
+ Rescaling velocity
+ 
+ Initial Geometry
+    6         0.000000    0.000000    0.000000
+    6         0.000000    0.000000    1.335000
+    7         1.264397    0.000000   -0.730000
+    1        -0.943102    0.000000    1.879500
+    1         1.076186    0.000000   -1.742658
+    6         2.029988    1.192085   -0.377291
+    8         3.124483    1.385148   -0.880489
+    7         1.485774    2.153128    0.577606
+    6         0.174667    1.698823    1.031704
+    7        -0.369547    2.659865    1.986601
+    1        -1.294506    2.339362    2.306958
+    1         0.265127    2.738619    2.793997
+    1        -0.094775   -0.921788   -0.535000
+
+--------------------------------------------------------------------------------
+  QM CALCULATION INFO
+--------------------------------------------------------------------------------
+
+| QMMM: Citation for AMBER QMMM Run:
+| QMMM: R.C. Walker, M.F. Crowley and D.A. Case, J. COMP. CHEM. 29:1019, 2008
+
+QMMM: SINGLET STATE CALCULATION
+QMMM: RHF CALCULATION, NO. OF DOUBLY OCCUPIED LEVELS = 21
+
+| QMMM: *** Selected Hamiltonian *** 
+| QMMM: AM1         
+
+| QMMM: *** Parameter sets in use ***
+| QMMM: C : M.J.S.DEWAR et al. JACS, 107, 3902, (1985)
+| QMMM: N : M.J.S.DEWAR et al. JACS, 107, 3902, (1985)
+| QMMM: H : M.J.S.DEWAR et al. JACS, 107, 3902, (1985)
+| QMMM: O : M.J.S.DEWAR et al. JACS, 107, 3902, (1985)
+
+| QMMM: *** SCF convergence criteria ***
+| QMMM: Energy change                :  0.2D-06 kcal/mol
+| QMMM: Error matrix |FP-PF|         :  0.1D+00 au
+| QMMM: Density matrix change        :  0.2D-04
+| QMMM: Maximum number of SCF cycles :      300
+ 
+| QMMM: *** Diagonalization Routine Information ***
+| QMMM: Pseudo diagonalizations are allowed.
+| QMMM: Auto diagonalization routine selection is disabled.
+| QMMM: Using internal diagonalization routine (diag_routine=1).
+
+  QMMM: QM Region Cartesian Coordinates (*=link atom) 
+  QMMM: QM_NO.   MM_NO.  ATOM         X         Y         Z
+  QMMM:     1        1      C        0.0000    0.0000    0.0000
+  QMMM:     2        2      C        0.0000    0.0000    1.3350
+  QMMM:     3        3      N        1.2644    0.0000   -0.7300
+  QMMM:     4        4      H       -0.9431    0.0000    1.8795
+  QMMM:     5        5      H        1.0762    0.0000   -1.7427
+  QMMM:     6        6      C        2.0300    1.1921   -0.3773
+  QMMM:     7        7      O        3.1245    1.3851   -0.8805
+  QMMM:     8        8      N        1.4858    2.1531    0.5776
+  QMMM:     9        9      C        0.1747    1.6988    1.0317
+  QMMM:    10       10      N       -0.3695    2.6599    1.9866
+  QMMM:    11       11      H       -1.2945    2.3394    2.3070
+  QMMM:    12       12      H        0.2651    2.7386    2.7940
+  QMMM:    13       13      H       -0.0948   -0.9218   -0.5350
+
+--------------------------------------------------------------------------------
+  RESULTS
+--------------------------------------------------------------------------------
+
+       iter       energy            rms gradient
+       ----    --------------     -----------------
+xmin     1    -1513.775630 eV        2.658057 eV/A
+xmin     2    -1515.446195 eV        2.260749 eV/A
+xmin     3    -1516.327919 eV        3.248985 eV/A
+xmin     4    -1517.549503 eV        1.802144 eV/A
+xmin     5    -1519.825043 eV        1.459016 eV/A
+xmin     6    -1519.919506 eV        1.371776 eV/A
+xmin     7    -1520.212074 eV        1.173634 eV/A
+xmin     8    -1520.298974 eV        0.982218 eV/A
+xmin     9    -1520.335008 eV        1.115798 eV/A
+xmin    10    -1520.580550 eV        0.962503 eV/A
+xmin    11    -1520.602303 eV        0.631588 eV/A
+xmin    12    -1520.765795 eV        0.651830 eV/A
+xmin    13    -1520.826483 eV        0.481274 eV/A
+xmin    14    -1520.854774 eV        0.323325 eV/A
+xmin    15    -1520.978326 eV        0.563771 eV/A
+xmin    16    -1521.050149 eV        0.228184 eV/A
+xmin    17    -1521.067941 eV        0.198259 eV/A
+xmin    18    -1521.092596 eV        0.182698 eV/A
+xmin    19    -1521.106407 eV        0.250452 eV/A
+xmin    20    -1521.153445 eV        0.408719 eV/A
+xmin    21    -1521.174927 eV        0.178545 eV/A
+xmin    22    -1521.184012 eV        0.239246 eV/A
+xmin    23    -1521.190499 eV        0.253385 eV/A
+xmin    24    -1521.198964 eV        0.125695 eV/A
+xmin    25    -1521.232990 eV        0.451034 eV/A
+xmin    26    -1521.257415 eV        0.262289 eV/A
+xmin    27    -1521.267086 eV        0.317693 eV/A
+xmin    28    -1521.281449 eV        0.173728 eV/A
+xmin    29    -1521.293423 eV        0.230060 eV/A
+xmin    30    -1521.300045 eV        0.213642 eV/A
+xmin    31    -1521.309580 eV        0.201557 eV/A
+xmin    32    -1521.320942 eV        0.175328 eV/A
+xmin    33    -1521.332918 eV        0.269485 eV/A
+xmin    34    -1521.370973 eV        0.247400 eV/A
+xmin    35    -1521.399547 eV        0.361356 eV/A
+xmin    36    -1521.403868 eV        0.243780 eV/A
+xmin    37    -1521.420972 eV        0.198678 eV/A
+xmin    38    -1521.430967 eV        0.133537 eV/A
+xmin    39    -1521.434094 eV        0.352383 eV/A
+xmin    40    -1521.447220 eV        0.279331 eV/A
+xmin    41    -1521.456888 eV        0.221639 eV/A
+xmin    42    -1521.474442 eV        0.155056 eV/A
+xmin    43    -1521.479635 eV        0.100927 eV/A
+xmin    44    -1521.490427 eV        0.595465 eV/A
+xmin    45    -1521.516781 eV        0.380220 eV/A
+xmin    46    -1521.536110 eV        0.180022 eV/A
+xmin    47    -1521.565468 eV        0.128095 eV/A
+xmin    48    -1521.567723 eV        0.132593 eV/A
+xmin    49    -1521.569795 eV        0.077000 eV/A
+xmin    50    -1521.571214 eV        0.043257 eV/A
+xmin    51    -1521.571817 eV        0.033036 eV/A
+xmin    52    -1521.572367 eV        0.069454 eV/A
+xmin    53    -1521.573282 eV        0.028989 eV/A
+xmin    54    -1521.574638 eV        0.079660 eV/A
+xmin    55    -1521.575371 eV        0.028276 eV/A
+xmin    56    -1521.575615 eV        0.031020 eV/A
+xmin    57    -1521.576074 eV        0.090202 eV/A
+xmin    58    -1521.577423 eV        0.055029 eV/A
+xmin    59    -1521.577946 eV        0.019583 eV/A
+xmin    60    -1521.578198 eV        0.046503 eV/A
+xmin    61    -1521.578622 eV        0.024130 eV/A
+xmin    62    -1521.578895 eV        0.042140 eV/A
+xmin    63    -1521.579218 eV        0.018016 eV/A
+xmin    64    -1521.579305 eV        0.015282 eV/A
+xmin    65    -1521.579456 eV        0.028462 eV/A
+xmin    66    -1521.579562 eV        0.020061 eV/A
+xmin    67    -1521.579756 eV        0.067943 eV/A
+xmin    68    -1521.580559 eV        0.042613 eV/A
+xmin    69    -1521.580887 eV        0.022525 eV/A
+xmin    70    -1521.581172 eV        0.056019 eV/A
+xmin    71    -1521.581539 eV        0.032896 eV/A
+xmin    72    -1521.581818 eV        0.015356 eV/A
+xmin    73    -1521.581898 eV        0.017448 eV/A
+xmin    74    -1521.582121 eV        0.018942 eV/A
+xmin    75    -1521.582149 eV        0.011453 eV/A
+xmin    76    -1521.582182 eV        0.032158 eV/A
+xmin    77    -1521.582395 eV        0.018808 eV/A
+xmin    78    -1521.582533 eV        0.013299 eV/A
+xmin    79    -1521.582564 eV        0.014959 eV/A
+xmin    80    -1521.582624 eV        0.010934 eV/A
+xmin    80    -1521.582649 eV        0.009125 eV/A
+  ... geometry converged!
+ 
+ Final Structure
+    6         0.127031   -0.274458   -0.146820
+    6        -0.375433    0.440346    0.910403
+    7         1.249816    0.130939   -0.807815
+    1        -1.269945    0.108866    1.446461
+    1         1.611801   -0.384507   -1.576839
+    6         1.938736    1.325283   -0.390798
+    8         2.970818    1.611216   -1.030114
+    7         1.442357    2.087988    0.673336
+    6         0.326187    1.666844    1.300099
+    7        -0.186525    2.403873    2.339684
+    1        -0.999503    2.085429    2.799016
+    1         0.243176    3.247103    2.629176
+    1        -0.359824   -1.203679   -0.499858
+ LPRINT:           2           0
+ 
+ |^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^|
+ | MD normal termination at   Sun Jun 27 09:05:22 EDT 2021   |
+ | MD total CPU time          0.99000     seconds |
+ |      0 days  0 hours  0 minutes  0 seconds     |
+ 
+  SQM (ground sim%naesmd%state) took overall [s]:
+       0.585    
+  Davidson (excited states) took overall [s]:
+        0.00    
+  deriv (adiabatic forces) took overall [s]:
+       0.826E-03
+  nacT (NA derivatives) took overall [s]:
+        0.00    
+ |________________________________________________|
+ 
