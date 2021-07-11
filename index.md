@@ -12,9 +12,9 @@ startdate: 2021-06-14      # machine-readable start date for the workshop in YYY
 enddate: 2021-06-25        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Alexey Akimov", "Jeanette Sperhac", "Sudhakar Pamidighantam",
              "Ivan Infante",  "Felipe Zapata", "Sergei Tretiak", "Walter Malone", 
-             "Mario Barbatti", "Hans Lischka", "Amber Jain", "Aiichiro Nakano"]  # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+             "Mario Barbatti", "Ljiljana Stojanovic", "Hans Lischka", "Amber Jain", "Aiichiro Nakano"]  # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper: ["Mohammad Shakiba", "Bas van Beek", "Juliette Zito", "Roberta Pascazio",
-         "Thomas Linker", "Ljiljana Stojanovic", "Reed Nieman", "Bhumika Jayee" ] # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+         "Thomas Linker", "Reed Nieman" ] # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["alexeyak@buffalo.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:         # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 googleform: https://forms.gle/kup1bkWibLsHH8Bn7
@@ -274,6 +274,7 @@ The details may vary and the order of topics may be changed, the topics may be o
 | [Dr. Felipe Zapata](https://www.linkedin.com/in/felipe-zapata/?originalSubdomain=nl) | Netherlands eScience Center, Netherlands | Instructor for: **CAT, FOX, nano-qmflows, CP2k** |
 | [Dr. Hans Lischka](https://homepage.univie.ac.at/hans.lischka/) | Texas Tech University | Instructor for: **COLUMBUS, Newton-X** |
 | [Dr. Mario Barbatti](https://barbatti.org/) | Aix-Marseille University, France | Instructor for: **Newton-X, DFTB+** |
+| [Dr. Ljiljana Stojanovic](https://iris.ucl.ac.uk/iris/browse/profile?upi=LSTOJ81) | University College London, UK | Instructor for **Newton-X, DFTB+** |
 | [Dr. Amber Jain](https://amberj74.wixsite.com/quantumdynamics/amber-jain-1) | Indian Institute of Technology, India  | Instructor: **HEOM (in Libra)** |
 | [Dr. Aiichiro Nakano](https://viterbi.usc.edu/directory/faculty/Nakano/Aiichiro) | University of Southern California, USA  |  Instructor for: **QXMD** |
 
@@ -286,8 +287,6 @@ The details may vary and the order of topics may be changed, the topics may be o
 | Ms. Juliette Zito  |  Istituto Italiano di Tecnologia, Italy  | Co-instructor for: **CAT, FOX, nano-qmflows** |
 | Ms. Roberta Pascazio | Istituto Italiano di Tecnologia, Italy | Co-instructor for **CAT, FOX** | 
 | Dr. Reed Nieman | Texas Tech University, USA | Co-instructor for **COLUMBUS** |
-| Dr. Bhumika Jayee | Texas Tech University, USA | Co-instructor for **COLUMBUS** |
-| [Dr. Ljiljana Stojanovic](https://iris.ucl.ac.uk/iris/browse/profile?upi=LSTOJ81) | University College London, UK | Co-instructor for **Newton-X, DFTB+** |
 | Mr. Thomas Linker | University of Southern California, USA  |  Co-instructor for: **QXMD** |
 
 
