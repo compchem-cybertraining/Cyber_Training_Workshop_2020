@@ -49,9 +49,9 @@ title: "Schedule and Participants"
 | 16 | **Dhara J. Trivedi** | FAC-PHD | Clarkson University | US, NY | Dhara J Trivedi | attended |
 | 17 | **Pouya Khazaei** | GRA-1 | University of Michigan | US, MI | Eitan Geva | **graduated** [project](https://github.com/compchem-cybertraining/Cyber_Training_Workshop_2021/tree/gh-pages/course_work/pkhazaei) | 
 | 18 | **Manuel Alejandro Cardosa** | GRA-2 | University of Liege | Belgium | Francoise Remacle | attended |
-| 19 | **Ilia Sokolovskii** | GRA-1 | University of Jyvaskyla | Finland | Gerrit Groenhof | attended |
-| 20 | Ruth Helena Tichauer | PD |  University of Jyvaskyla | Finland | Gerrit Groenhof |  attended |
-| 21 | **Sunita Sharma** | GRA-3 | IIT Bombay | India | Gopalan Rajaraman | attended |
+| 19 | **Ilia Sokolovskii** | GRA-1 | University of Jyvaskyla | Finland | Gerrit Groenhof | **graduated** [project](https://github.com/compchem-cybertraining/Cyber_Training_Workshop_2021/tree/gh-pages/course_work/ilsokolo) |
+| 20 | Ruth Helena Tichauer | PD |  University of Jyvaskyla | Finland | Gerrit Groenhof |  **graduated** [project](https://github.com/compchem-cybertraining/Cyber_Training_Workshop_2021/tree/gh-pages/course_work/ilsokolo) |
+| 21 | **Sunita Sharma** | GRA-3 | IIT Bombay | India | Gopalan Rajaraman | **graduated** [project](https://github.com/compchem-cybertraining/Cyber_Training_Workshop_2021/tree/gh-pages/course_work/sunita_sharma) |
 | 22 | **Bas van Beek** | GRA-3 | Vrije Universiteit Amsterdam | Netherlands | Ivan Infante | attended |
 | 23 | **Juliette Zito** | GRA-2 | Istituto Italiano di Tecnologia | Italy | Ivan Infante | attended |
 | 24 | Roberta Pascazio | GRA-1 | Istituto Italiano di Tecnologia | Italy | Ivan Infante | attended |
@@ -68,7 +68,7 @@ title: "Schedule and Participants"
 | 35 | **Andres Cifuentes** | GRA-1 | Rutgers University Newark | US, NJ | Michele Pavanello | **2nd prize** [project](https://github.com/compchem-cybertraining/Cyber_Training_Workshop_2021/tree/gh-pages/course_work/andres) |
 | 36 | **Atish Ghosh** | GRA-3 | Visva-Bharati University | India | Pranab Sarkar | attended |
 | 37 | **Alva Dillon** | GRA-4 | Brandeis University | US, MA | Rebecca Gieseking | attended |
-| 38 | **Austin Hill** | GRA-2 | University of South Carolina | US, SC | Sophya Garashchuk | attended |
+| 38 | **Austin Hill** | GRA-2 | University of South Carolina | US, SC | Sophya Garashchuk | **graduated** [project](https://github.com/compchem-cybertraining/Cyber_Training_Workshop_2021/tree/gh-pages/course_work/ahill) |
 | 39 | **Matthew Dutra** | PD | University of South Carolina | US, SC | Sophya Garashchuk | **graduated** [project](https://github.com/compchem-cybertraining/Cyber_Training_Workshop_2021/tree/gh-pages/course_work/mdutra) |
 | 40 | Subhadip Mondal | GRA-1 | Indian Institute of Technology Kanpur |  India | Srihari Keshavamurthy | attended |
 | 41 | **Jingbai Li** | PD | Northeastern Universtiy | US, MA | Steven Lopez | **3rd prize** |

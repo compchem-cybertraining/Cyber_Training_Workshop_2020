@@ -34,6 +34,7 @@ root: .
 | Dr. Felipe Zapata | Netherlands eScience Center, Netherlands | Instructor for **CAT, FOX, nano-qmflows, CP2k** |
 | Dr. Hans Lischka | Texas Tech University, USA | Instructor for **COLUMBUS, Newton-X** |
 | Dr. Mario Barbatti | Aix-Marseille University, France | Instructor for **Newton-X, DFTB+** |
+| Dr. Ljiljana Stojanovic | University College London, UK | Instructor for **Newton-X, DFTB+** |
 | Dr. Amber Jain | IIT Bombay, India | Instructor for **HEOM** |
 | Dr. Aiichiro Nakano | University of Southern California, USA | Instructor for **QXMD** |
 | Mr. Mohammad Shakiba | Shahid Bahonar University of Kerman, Iran | Co-instructor for **CP2k, Libra/CP2k** |
@@ -41,10 +42,10 @@ root: .
 | Ms. Juliette Zito | Istituto Italiano di Tecnologia, Italy | Co-instructor for **nano-qmflows** | 
 | Ms. Roberta Pascazio | Istituto Italiano di Tecnologia, Italy | Co-instructor for **CAT, FOX** | 
 | Dr. Reed Nieman | Texas Tech University, USA | Co-instructor for **COLUMBUS** |
-| Dr. Bhumika Jayee | Texas Tech University, USA | Co-instructor for **COLUMBUS** |
-| Dr. Ljiljana Stojanovic | University College London, UK | Co-instructor for **Newton-X, DFTB+** |
+| Mr. Thomas Linker | Unisversity of Southern California, USA | Co-instructor for **QXMD** |
 | Ms. Dori Sajdak | University at Buffalo Center for Computational Research (UB CCR), USA | UB CCR system administrator, VPN, accounts, etc. |
 | Ms. Cynthia Cornelius | University at Buffalo Center for Computational Research (UB CCR) | UB CCR system administrator, program installation |
+
 
 
 
